@@ -1,7 +1,8 @@
 <template>
-  <div class="hero">
+  <div class="hero" v-if="!loading">
     <img
       class="hero__banner"
+      @load="loading = false"
       src="/banner.jpg"
       alt="Zdjęcie przedstawiające dentystkę i pacjentkę na fotelu dentystycznym"
     />
@@ -25,11 +26,17 @@
       <BaseButton to="/kontakt">Umów wizytę</BaseButton>
     </div>
   </div>
+  <p v-else>LOADING</p>
 </template>
 
 <script>
 export default {
   name: 'Hero',
+  data() {
+    return {
+      loading: true,
+    }
+  },
 }
 </script>
 
