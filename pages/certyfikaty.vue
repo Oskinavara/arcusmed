@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <div>
+  <div class="certyfikaty">
+    <h1 class="certyfikaty__heading">Certyfikaty</h1>
+    <h2 class="certyfikaty__subheading">Monika Zoła-Lizak</h2>
+    <div class="certyfikaty__grid">
       <img src="/certyfikaty/monika_zola/1.jpg" alt="" />
       <img src="/certyfikaty/monika_zola/2.jpg" alt="" />
       <img src="/certyfikaty/monika_zola/3.jpg" alt="" />
@@ -41,6 +43,9 @@
       <img src="/certyfikaty/monika_zola/38.jpg" alt="" />
       <img src="/certyfikaty/monika_zola/39.jpg" alt="" />
       <img src="/certyfikaty/monika_zola/40.jpg" alt="" />
+    </div>
+    <h2 class="certyfikaty__subheading">Monika Zoła-Lizak</h2>
+    <div class="certyfikaty__grid">
       <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
       <img src="/certyfikaty/kamila_krzyniewska/3.jpg" alt="" />
       <img src="/certyfikaty/kamila_krzyniewska/4.jpg" alt="" />
@@ -63,7 +68,15 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-img {
-  max-width: 600px;
+.certyfikaty {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
 }
 </style>

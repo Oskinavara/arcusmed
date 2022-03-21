@@ -1,12 +1,12 @@
 <template>
-  <div class="hero" v-if="!loading">
+  <div class="hero">
     <img
       class="hero__banner"
-      @load="loading = false"
+      @load="test"
       src="/banner.jpg"
       alt="Zdjęcie przedstawiające dentystkę i pacjentkę na fotelu dentystycznym"
     />
-    <div class="hero__wrapper">
+    <div v-if="!loading" class="hero__wrapper">
       <p class="hero__subheading">Przychodnia NZOZ</p>
       <h1 class="hero__heading">Arcus-Med</h1>
       <p class="hero__content">
@@ -25,8 +25,8 @@
       </p>
       <BaseButton to="/kontakt">Umów wizytę</BaseButton>
     </div>
+    <p v-else>LOADING</p>
   </div>
-  <p v-else>LOADING</p>
 </template>
 
 <script>
@@ -36,6 +36,12 @@ export default {
     return {
       loading: true,
     }
+  },
+  methods: {
+    test() {
+      console.log('loaded')
+      this.loading = false
+    },
   },
 }
 </script>

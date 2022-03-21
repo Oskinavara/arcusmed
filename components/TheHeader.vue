@@ -1,11 +1,12 @@
 <template>
   <header class="header">
-    <nuxt-link class="header__logo" to="/">
-      <h1>Logo</h1>
-    </nuxt-link>
-    <Navigation />
-    
-    <Hamburger />
+    <div class="header__inner">
+      <nuxt-link class="header__logo" to="/">
+        <nuxt-img src="/arcus_logo.png" />
+      </nuxt-link>
+      <Navigation />
+      <Hamburger open />
+    </div>
   </header>
 </template>
 
@@ -17,19 +18,35 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  display: grid;
-  grid-template-columns: 8rem 1fr 8rem;
+  /* display: grid;
+  grid-template-columns: 8rem 1fr 8rem; */
+  background: $background;
+
   position: fixed;
   top: 0;
-  width: calc(100% - 2 * 20px);
-  max-width: $layout-width;
-  height: 112px;
+  width: 100%;
   align-items: center;
+  z-index: 100;
+  box-shadow: 0 4px 8px -8px gray;
+
+  &__inner {
+    max-width: $layout-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
 
   &__logo {
     font-size: 48px;
     text-decoration: none;
     color: black;
+
+    img {
+      max-width: 16rem;
+    }
   }
 
   .hamburger {

@@ -16,7 +16,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;600&family=Poppins:wght@200;300;400;600&display=swap',
@@ -27,6 +27,10 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
 
   ssr: true,
+
+  image: {
+    // Options
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -42,9 +46,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  buildModules: ['@nuxt/image'],
-
-  buildModules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
 
   styleResources: {
     // your settings here

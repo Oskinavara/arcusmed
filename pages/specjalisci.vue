@@ -120,7 +120,7 @@ export default {
     strong {
       font-weight: 600;
     }
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
   }
 }
 </style>
