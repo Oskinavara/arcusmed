@@ -8,6 +8,7 @@
       wizycie.
     </p>
     <h5 class="contact-section__subheading">Rejestracja telefoniczna</h5>
+    <a href="mailto:arcusmedrecepcja@gmail.com">arcusmedrecepcja@gmail.com</a>
     <a href="tel:+(34)3664491">(34) 366-44-91</a>
     <a href="tel:506407833">506 407 833</a>
   </section>
@@ -19,9 +20,14 @@ export default {}
 
 <style lang="scss" scoped>
 .contact-section {
+  text-align: center;
   &__heading {
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  a {
+    display: block;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <section class="hero">
     <img
       class="hero__banner"
       @load="test"
@@ -26,7 +26,7 @@
       <BaseButton to="/kontakt">Umów wizytę</BaseButton>
     </div>
     <p v-else>LOADING</p>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -52,7 +52,7 @@ export default {
   &__wrapper {
     background: rgba(#fff, 0.75);
     padding: 2rem;
-    top: 25%;
+    top: 15%;
     left: 40%;
     position: absolute;
     max-width: 60%;

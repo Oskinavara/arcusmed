@@ -5,7 +5,7 @@
       :key="section.name"
       class="specjalisci__section"
     >
-      <h3 class="specjalisci__heading">{{ section.name }}</h3>
+      <h2 class="specjalisci__heading">{{ section.name }}</h2>
       <ul class="specjalisci__list">
         <li
           v-for="doctor in section.doctors"
@@ -112,7 +112,6 @@ export default {
     padding: 0.5rem 0 0.75rem;
   }
   &__heading {
-    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 300;
   }

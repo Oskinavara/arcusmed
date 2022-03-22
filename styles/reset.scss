@@ -134,10 +134,27 @@ body {
   overflow-y: scroll;
 }
 
-h1 {
-  font-size: 3rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p {
@@ -147,4 +164,9 @@ p {
 img {
   max-width: 100%;
   display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
 }

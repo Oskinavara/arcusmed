@@ -45,7 +45,7 @@ export default {
     color: black;
 
     img {
-      max-width: 16rem;
+      max-width: 19rem;
     }
   }
 
