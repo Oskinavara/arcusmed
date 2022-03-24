@@ -21,6 +21,7 @@ export default {
   /* display: grid;
   grid-template-columns: 8rem 1fr 8rem; */
   background: $background;
+  /* background: white; */
 
   position: fixed;
   top: 0;

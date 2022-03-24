@@ -151,48 +151,60 @@ export default {
   ],
   wyb: [
     {
-      name: 'Diagnostyczny wax-up',
-      price: '600 zł',
-    },
-    {
-      name: 'Korona porcelanowa na metalu',
-      price: '1070 zł',
-    },
-    {
-      name: 'Korona pełnoceramiczna na cyrkonie, e-max ',
-      price: '2000 zł',
-    },
-    {
-      name: 'Onlay, inlay, overlay',
+      name: 'Wybielanie gabinetowe przy zastosowaniu akceleratora wybielania Beyond Polus (trzykrotna aplikacja żelu wybielającego)',
       price: '1500 zł',
     },
     {
-      name: 'Licówka e-max',
+      name: 'Wybielanie nakładkowe zębów ( wykonanie nakładek wybielających, pacjent otrzymuje osiem strzykawek z materiałem wybielającym',
+      price: '1500 zł',
+    },
+    {
+      name: 'Wybielanie metodą łączoną- gabinetowe i nakładkowe wybielanie',
+      price: '1800 zł',
+    },
+    {
+      name: 'Koszt dokupienia jednej strzykawki z preparatem wybielającym',
+      price: '70 zł',
+    },
+    {
+      name: ' Wybielanie zęba martwego (obejmuje założenie preparatu wybielającego oraz wkładki z wodorotlenku wapnia, nie obejmuje odbudowy po wybielaniu) dwie wizyty 400 zł trzy wizyty 500 zł',
       price: '2000 zł',
     },
+  ],
+  chir: [
     {
-      name: 'Proteza szkieletowa',
-      price: '1850 zł',
+      name: 'Nieskomplikowana ekstrakcja zęba stałego',
+      price: '300 zł',
     },
     {
-      name: 'Proteza całkowita',
-      price: '1200 zł',
+      name: 'Ekstrakcja z dłutowaniem lub separacją korzeni',
+      price: '350 - 400 zł',
     },
     {
-      name: 'Proteza częściowa',
-      price: '850 zł',
+      name: 'Ekstrakcja zęba mlecznego',
+      price: '160 - 220 zł',
     },
     {
-      name: 'Naprawa protezy - sklejenie lub dostawienie jednego zęba lub klamry',
-      price: '150 zł',
+      name: 'Szycie dodatkowo o ile konieczne',
+      price: '100 zł',
     },
     {
-      name: 'Podścielenie protezy',
-      price: '250 zł',
+      name: 'Laserowe podcięcie wędzidełka wargi górnej',
+      price: '450 zł',
+    },
+  ],
+  oklu: [
+    {
+      name: 'Diagnostyczne oprawienie modeli przy pomocy łuku twarzowego w artykulator',
+      price: '300 zł',
     },
     {
-      name: 'Zacementowanie korony wykonanej poza naszą przychodnią',
-      price: '250 zł',
+      name: 'Wykonanie szyny deprogramacyjnej',
+      price: '1000 zł',
+    },
+    {
+      name: 'Ekwilibracja za wizytę ',
+      price: '300 zł',
     },
   ],
 }

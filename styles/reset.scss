@@ -134,6 +134,10 @@ body {
   overflow-y: scroll;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -159,6 +163,10 @@ h3 {
 
 p {
   line-height: 1.5em;
+}
+
+li {
+  line-height: 1.3;
 }
 
 img {

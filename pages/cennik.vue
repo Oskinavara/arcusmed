@@ -78,6 +78,51 @@
         </li>
       </ul>
     </section>
+
+    <section class="cennik__section">
+      <h2 class="cennik__subheading">Wybielanie</h2>
+      <ul class="cennik__table">
+        <li class="cennik__list-item" v-for="item in wyb" :key="item.name">
+          <p class="cennik__name">
+            {{ item.name }}
+          </p>
+          <p class="cennik__price">
+            {{ item.price }}
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cennik__section">
+      <h2 class="cennik__subheading">Chirurgia</h2>
+      <p class="cennik__note">
+        Każdorazowo cena obejmuje konieczne znieczulenie
+      </p>
+      <ul class="cennik__table">
+        <li class="cennik__list-item" v-for="item in chir" :key="item.name">
+          <p class="cennik__name">
+            {{ item.name }}
+          </p>
+          <p class="cennik__price">
+            {{ item.price }}
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cennik__section">
+      <h2 class="cennik__subheading">Choroba okluzyjna</h2>
+      <ul class="cennik__table">
+        <li class="cennik__list-item" v-for="item in oklu" :key="item.name">
+          <p class="cennik__name">
+            {{ item.name }}
+          </p>
+          <p class="cennik__price">
+            {{ item.price }}
+          </p>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -95,12 +140,17 @@ export default {
 
 <style lang="scss" scoped>
 .cennik {
-  max-width: 900px;
+  max-width: 750px;
   margin: 0 auto;
 
   &__heading {
     padding: 3rem 0;
     text-transform: uppercase;
+  }
+
+  &__subheading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   &__note {
@@ -113,12 +163,17 @@ export default {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     &:nth-of-type(2n + 1) {
-      background: rgba(#ddd, 0.75);
+      background: rgba(#e5e5e5, 0.75);
     }
   }
 
   &__table {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1rem;
+  }
+
+  &__price {
+    margin-left: 1rem;
+    white-space: nowrap;
   }
 }
 </style>

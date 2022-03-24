@@ -1,25 +1,48 @@
 <template>
-  <div>
-    Oferta
-    <a href="#stomatologia"> Poradnia stomatologiczna </a>
-    <a href="#gabinety"> Gabinety lekarskie </a>
-    <h2 id="stomatologia">Poradnia stomatologiczna</h2>
-    <p>
-      Nasze gabinety stomatologiczne wyposażone są w nowoczesne mikroskopy firmy
-      Leica, oraz sprzęt do wykonywania wszystkich wysokospecjalistycznych
-      procedur przeprowadzanych w trakcie leczenia kanałowego, protetycznego i
-      zachowawczego. Posiadamy sprzęt do wykonywania zdjęć RTG techniką
-      radiowizjografii, pozwalający na szybką i dokładną diagnostykę problemu
-      pacjenta. Współpracujemy z pracownią wykonująca badania CBCT oraz zdjęcia
-      pantomograficzne
-    </p>
-    <p>
-      Oferujemy kompleksowe leczenie w zakresie stomatologii zachowawczej ze
-      szczególnym uwzględnieniem leczenia kanałowego w powiększeniu,
-      stomatologii estetycznej leczenia protetycznego, chirurgii
-      stomatologicznej i profilaktyki schorzeń przyzębia
-    </p>
-    <h3>Co nas wyróżnia?</h3>
+  <div class="oferta">
+    <h1 class="oferta__heading">Oferta</h1>
+    <div class="oferta__flex" id="stomatologia">
+      <a class="oferta__link" href="#stomatologia">
+        Poradnia stomatologiczna
+      </a>
+      <a class="oferta__link" href="#gabinety"> Gabinety lekarskie </a>
+    </div>
+    <Mosaic
+      heading="Poradnia stomatologiczna"
+      smallImage1="/arcus/Optimized-13.jpg"
+      smallImage2="/arcus/Optimized-15.jpg"
+      largeImage="/arcus/Optimized-14.jpg"
+    >
+      <p>
+        Nasze gabinety stomatologiczne wyposażone są w nowoczesne mikroskopy
+        firmy Leica, oraz sprzęt do wykonywania wszystkich
+        wysokospecjalistycznych procedur przeprowadzanych w trakcie leczenia
+        kanałowego, protetycznego i zachowawczego. Posiadamy sprzęt do
+        wykonywania zdjęć RTG techniką radiowizjografii, pozwalający na szybką i
+        dokładną diagnostykę problemu pacjenta. Współpracujemy z pracownią
+        wykonująca badania CBCT oraz zdjęcia pantomograficzne
+      </p>
+      <p>
+        Oferujemy kompleksowe leczenie w zakresie stomatologii zachowawczej ze
+        szczególnym uwzględnieniem leczenia kanałowego w powiększeniu,
+        stomatologii estetycznej leczenia protetycznego, chirurgii
+        stomatologicznej i profilaktyki schorzeń przyzębia
+      </p>
+    </Mosaic>
+    <Mosaic
+      heading="Co nas wyróżnia?"
+      smallImage1="/arcus/Optimized-16.jpg"
+      smallImage2="/arcus/Optimized-17.jpg"
+      largeImage="/arcus/Optimized-22.jpg"
+    >
+      <p>
+        Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
+        zębów pracujemy w lupach zabiegowych w 2, 5 oraz 3,2 krotnym
+        powiększeniu W przypadku leczenia kanałowego zawsze praca odbywa się z
+        użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
+      </p>
+    </Mosaic>
+    <h2></h2>
     <ul>
       <li>
         Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
@@ -31,7 +54,7 @@
         nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
       </li>
     </ul>
-    <h3>Dlaczego leczenie z użyciem mikroskopu jest takie ważne ?.</h3>
+    <h2>Dlaczego leczenie z użyciem mikroskopu jest takie ważne?</h2>
     <li>
       Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego opracowania
       kanałów. Umożliwia lokalizację wszystkich ujść nawet tych niewidocznych „
@@ -54,10 +77,12 @@
       wypełnienia zębów oraz uzupełnienia protetyczne takie jak korony, licówki
       i mosty .
     </li>
-    <h2>Gabinety lekarskie</h2>
-    <div v-for="tile in tiles" :key="tile.heading">
-      <h4>{{ tile.heading }}</h4>
-      <p>{{ tile.content }}</p>
+    <h2 id="gabinety">Gabinety lekarskie</h2>
+    <div class="oferta__tiles-wrapper">
+      <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
+        <h4>{{ tile.heading }}</h4>
+        <p>{{ tile.content }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -95,4 +120,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.oferta {
+  &__flex {
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  &__link {
+    border: 1px solid #ccc;
+    padding: 4rem;
+    &:first-of-type {
+      margin-right: 2rem;
+    }
+  }
+
+  &__tiles-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &__tile {
+    padding: 2rem;
+    border: 1px solid #ccc;
+
+    &:nth-of-type(2n) {
+      margin-top: 3rem;
+    }
+  }
+}
+h2,
+h3,
+p {
+  margin: 2rem 0;
+}
 </style>

@@ -50,8 +50,9 @@ export default {
 .hero {
   position: relative;
   &__wrapper {
-    background: rgba(#fff, 0.75);
-    padding: 2rem;
+    background: rgba(#fff, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 3rem;
     top: 15%;
     left: 40%;
     position: absolute;

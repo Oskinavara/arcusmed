@@ -119,6 +119,7 @@ export default {
     strong {
       font-weight: 600;
     }
+    font-weight: normal;
     margin-bottom: 0.25rem;
   }
 }
