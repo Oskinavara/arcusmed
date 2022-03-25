@@ -21,38 +21,82 @@
         </p>
       </div>
     </div>
-    <div class="o-nas__flex">
-      <p>
-        NZOZ Arcus-Med to przychodnia o profilu stomatologiczno – lekarskim.
-        Powstała jako naturalny efekt zawodowej pasji jej właścicieli.
-        Przychodnia jest kontynuacją prowadzonego od 1997 r. gabinetu
-        stomatologicznego Moniki Zoły Lizak, oraz gabinetu lekarskiego Adam
-        Lizaka. Od 1 czerwca 2009 roku jesteśmy przy ulicy św. Rocha 17 w
-        Częstochowie. Od początku funkcjonowania NZOZ ARCUS-MED naszym celem
-        jest nowoczesne leczenie pacjentów wynikające z zasad medycyny opartej
-        na faktach (Evidence Based Medicine), holistyczne podejście do Pacjenta
-        oraz profilaktyka chorób cywilizacyjnych. Współpraca z wieloma lekarzami
-        prezentującymi wysoki poziom merytoryczny oraz regularne uczestnictwo w
-        kursach i szkoleniach podnoszących kwalifikacje zawodowe dają nadzieje
-        na spełnienie oczekiwań naszych Pacjentów. Zapraszamy do kontaktu oraz
-        umawiania wizyt z naszymi specjalistami.
-      </p>
-      <img src="/arcus/Optimized-IMG_1915.jpg" alt="" />
+    <div class="o-nas__wrapper inverted">
+      <div class="o-nas__image-wrapper">
+        <img src="/arcus/Optimized-IMG_1915.jpg" alt="" />
+      </div>
+      <div class="o-nas__text-wrapper">
+        <h2>NZOZ ARCUS-MED</h2>
+        <p>
+          NZOZ Arcus-Med to przychodnia o profilu stomatologiczno – lekarskim.
+          Powstała jako naturalny efekt zawodowej pasji jej właścicieli.
+          Przychodnia jest kontynuacją prowadzonego od 1997 r. gabinetu
+          stomatologicznego Moniki Zoły Lizak, oraz gabinetu lekarskiego Adam
+          Lizaka. Od 1 czerwca 2009 roku jesteśmy przy ulicy św. Rocha 17 w
+          Częstochowie.
+        </p>
+        <p>
+          Od początku funkcjonowania NZOZ ARCUS-MED naszym celem jest nowoczesne
+          leczenie pacjentów wynikające z zasad medycyny opartej na faktach
+          (Evidence Based Medicine), holistyczne podejście do Pacjenta oraz
+          profilaktyka chorób cywilizacyjnych. Współpraca z wieloma lekarzami
+          prezentującymi wysoki poziom merytoryczny oraz regularne uczestnictwo
+          w kursach i szkoleniach podnoszących kwalifikacje zawodowe dają
+          nadzieje na spełnienie oczekiwań naszych Pacjentów. Zapraszamy do
+          kontaktu oraz umawiania wizyt z naszymi specjalistami.
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Arcus-Med | O nas',
+  },
+}
 </script>
 
 <style lang="scss" scoped>
 .o-nas {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 0.15fr 0.8fr;
     grid-template-rows: 1fr 1fr 0.5fr;
     margin: 4rem 0;
+
+    h2 {
+      font-family: 'Poppins';
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    &.inverted {
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      grid-template-columns: 1fr 0.1fr 0.45fr 0.5fr;
+
+      .o-nas__text-wrapper {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+      }
+
+      .o-nas__image-wrapper {
+        grid-column: 2 / span 3;
+        grid-row: 2 / span 2;
+        max-height: 500px;
+        img {
+          z-index: 3;
+        }
+        &::after {
+          transform: translate(-8em, -3em);
+        }
+      }
+    }
   }
 
   &__text-wrapper {
@@ -61,9 +105,10 @@ export default {}
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
     z-index: 2;
+    box-shadow: 0 0 20px rgba(black, 0.05);
 
     p {
-      padding: 1em 0;
+      padding: 0.5em 0;
     }
   }
 

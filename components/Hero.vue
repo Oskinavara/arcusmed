@@ -6,7 +6,7 @@
       src="/banner.jpg"
       alt="Zdjęcie przedstawiające dentystkę i pacjentkę na fotelu dentystycznym"
     />
-    <div v-if="!loading" class="hero__wrapper">
+    <div class="hero__wrapper">
       <p class="hero__subheading">Przychodnia NZOZ</p>
       <h1 class="hero__heading">Arcus-Med</h1>
       <p class="hero__content">
@@ -25,24 +25,12 @@
       </p>
       <BaseButton to="/kontakt">Umów wizytę</BaseButton>
     </div>
-    <p v-else>LOADING</p>
   </section>
 </template>
 
 <script>
 export default {
   name: 'Hero',
-  data() {
-    return {
-      loading: true,
-    }
-  },
-  methods: {
-    test() {
-      console.log('loaded')
-      this.loading = false
-    },
-  },
 }
 </script>
 
@@ -52,7 +40,7 @@ export default {
   &__wrapper {
     background: rgba(#fff, 0.7);
     backdrop-filter: blur(5px);
-    padding: 3rem;
+    padding: 2rem 3rem;
     top: 15%;
     left: 40%;
     position: absolute;
@@ -64,10 +52,16 @@ export default {
     width: 100%;
   }
   &__heading {
+    font-family: 'Poppins';
+    font-weight: 300;
     margin: 0.5rem 0 1rem;
   }
   &__content {
     padding: 0.5rem 0;
+  }
+
+  .base-button {
+    margin-top: 1rem;
   }
 }
 </style>

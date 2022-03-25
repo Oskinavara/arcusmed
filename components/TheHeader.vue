@@ -28,7 +28,7 @@ export default {
   width: 100%;
   align-items: center;
   z-index: 100;
-  box-shadow: 0 4px 8px -8px gray;
+  box-shadow: 0 4px 8px -7px rgba(black, 0.25);
 
   &__inner {
     max-width: $layout-width;

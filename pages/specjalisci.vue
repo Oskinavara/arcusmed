@@ -1,5 +1,6 @@
 <template>
   <div class="specjalisci">
+    <h1>Specjaliści</h1>
     <section
       v-for="section in sections"
       :key="section.name"
@@ -100,11 +101,19 @@ export default {
       ],
     }
   },
+  head: {
+    title: 'Arcus-Med | Specjaliści',
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .specjalisci {
+  max-width: 1100px;
+  margin: 0 auto;
+  h1 {
+    margin-bottom: 4rem;
+  }
   &__section {
     margin-bottom: 2rem;
   }

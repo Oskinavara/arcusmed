@@ -167,6 +167,9 @@ export default {
       ...cennik,
     }
   },
+  head: {
+    title: 'Arcus-Med | Cennik',
+  },
 }
 </script>
 

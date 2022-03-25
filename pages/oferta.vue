@@ -3,10 +3,14 @@
     <h1 class="oferta__heading">Oferta</h1>
     <div class="oferta__flex" id="stomatologia">
       <a class="oferta__link" href="#stomatologia">
+        <img src="@/assets/tooth-solid.svg" alt="" />
         Poradnia stomatologiczna
       </a>
-      <a class="oferta__link" href="#gabinety"> Gabinety lekarskie </a>
+      <a class="oferta__link" href="#gabinety">
+        <img src="@/assets/stethoscope-solid.svg" alt="" />Gabinety lekarskie
+      </a>
     </div>
+    <p style="text-align:center;margin-bottom:2rem">Jeszcze bede pracował nad tymi kafelkami... xd</p>
     <Mosaic
       heading="Poradnia stomatologiczna"
       smallImage1="/arcus/Optimized-13.jpg"
@@ -32,7 +36,7 @@
     <Mosaic
       type="2"
       heading="Co nas wyróżnia?"
-      smallImage1="/arcus/Optimized-16.jpg"
+      smallImage1="/arcus/Optimized-IMG_1977.jpg"
       smallImage2="/arcus/Optimized-17.jpg"
       largeImage="/arcus/Optimized-22.jpg"
     >
@@ -120,15 +124,21 @@ export default {
 .oferta {
   &__flex {
     display: flex;
-    padding: 4rem;
     justify-content: center;
+    margin-bottom: 2rem;
   }
 
   &__link {
-    border: 1px solid #ccc;
-    padding: 4rem;
-    &:first-of-type {
-      margin-right: 2rem;
+    color: white;
+    padding: 1rem;
+    background: rgba($primary, 1);
+    margin: 0 1rem;
+
+    img {
+      max-width: 4rem;
+      display: block;
+      margin: 0 auto 0.5rem;
+      filter: invert(1);
     }
   }
 
@@ -146,10 +156,8 @@ export default {
       margin-top: 3rem;
     }
   }
-}
-h2,
-h3,
-p {
-  margin: 2rem 0;
+  p {
+    padding: 0.5rem 0;
+  }
 }
 </style>

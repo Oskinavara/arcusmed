@@ -3,7 +3,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Arcus-Med | Kontakt',
+  },
+}
 </script>
 
 <style lang="scss" scoped>

@@ -170,7 +170,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Arcus-Med | Certyfikaty',
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -183,6 +187,10 @@ export default {}
 
   &__heading {
     margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin: 2rem 0;
   }
 }
 </style>

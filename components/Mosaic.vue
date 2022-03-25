@@ -42,7 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .mosaic {
-
   color: white;
   font-family: 'Poppins';
   font-weight: 300;
@@ -50,7 +49,7 @@ export default {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1em;
-  margin: 6rem 0;
+  margin-bottom: 6rem;
 
   img {
     height: 100%;
@@ -66,7 +65,7 @@ export default {
 
   &__heading {
     font-family: 'Poppins';
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: 300;
   }
 
