@@ -5,7 +5,11 @@
       <h2 class="cennik__subheading">Stomatologia zachowawcza</h2>
       <p class="cennik__note">*Cena nie obejmuje ewentualnego znieczulenia</p>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in stom" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in stom"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -29,7 +33,11 @@
         *Cena nie obejmuje odbudowy zęba po leczeniu kanałowym
       </p>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in stom" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in stom"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -40,7 +48,11 @@
       </ul>
       <p class="cennik__note">Dodatkowo płatne</p>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in stom2" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in stom2"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -54,7 +66,11 @@
     <section class="cennik__section">
       <h2 class="cennik__subheading">Profilaktyka</h2>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in prof" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in prof"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -68,7 +84,11 @@
     <section class="cennik__section">
       <h2 class="cennik__subheading">Protetyka</h2>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in prot" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in prot"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -82,7 +102,11 @@
     <section class="cennik__section">
       <h2 class="cennik__subheading">Wybielanie</h2>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in wyb" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in wyb"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -99,7 +123,11 @@
         Każdorazowo cena obejmuje konieczne znieczulenie
       </p>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in chir" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in chir"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -113,7 +141,11 @@
     <section class="cennik__section">
       <h2 class="cennik__subheading">Choroba okluzyjna</h2>
       <ul class="cennik__table">
-        <li class="cennik__list-item" v-for="item in oklu" :key="item.name">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in oklu"
+          :key="item.name"
+        >
           <p class="cennik__name">
             {{ item.name }}
           </p>
@@ -164,6 +196,10 @@ export default {
     padding: 0.5rem 1rem;
     &:nth-of-type(2n + 1) {
       background: rgba(#e5e5e5, 0.75);
+    }
+
+    &.indented {
+      padding-left: 2rem;
     }
   }
 

@@ -30,6 +30,7 @@
       </p>
     </Mosaic>
     <Mosaic
+      type="2"
       heading="Co nas wyróżnia?"
       smallImage1="/arcus/Optimized-16.jpg"
       smallImage2="/arcus/Optimized-17.jpg"
@@ -41,19 +42,12 @@
         powiększeniu W przypadku leczenia kanałowego zawsze praca odbywa się z
         użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
       </p>
-    </Mosaic>
-    <h2></h2>
-    <ul>
-      <li>
-        Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
-        zębów pracujemy w lupach zabiegowych w 2, 5 oraz 3,2 krotnym
-        powiększeniu
-      </li>
-      <li>
+      <p>
         W przypadku leczenia kanałowego zawsze praca odbywa się z użyciem
         nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
-      </li>
-    </ul>
+      </p>
+    </Mosaic>
+    <h2></h2>
     <h2>Dlaczego leczenie z użyciem mikroskopu jest takie ważne?</h2>
     <li>
       Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego opracowania
@@ -115,6 +109,9 @@ export default {
         },
       ],
     }
+  },
+  head: {
+    title: 'Arcus-Med | Oferta',
   },
 }
 </script>

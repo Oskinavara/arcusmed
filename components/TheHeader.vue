@@ -35,7 +35,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
+    height: 6rem;
     margin: 0 auto;
     padding: 0 1.25rem;
   }
@@ -46,7 +46,7 @@ export default {
     color: black;
 
     img {
-      max-width: 19rem;
+      max-width: 12rem;
     }
   }
 

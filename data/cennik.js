@@ -167,8 +167,17 @@ export default {
       price: '70 zł',
     },
     {
-      name: ' Wybielanie zęba martwego (obejmuje założenie preparatu wybielającego oraz wkładki z wodorotlenku wapnia, nie obejmuje odbudowy po wybielaniu) dwie wizyty 400 zł trzy wizyty 500 zł',
-      price: '2000 zł',
+      name: 'Wybielanie zęba martwego (obejmuje założenie preparatu wybielającego oraz wkładki z wodorotlenku wapnia, nie obejmuje odbudowy po wybielaniu)',
+      price: '',
+    },
+    { indented: true,
+      name: 'Dwie wizyty',
+      price: '400 zł',
+    },
+    {
+      name: 'Trzy wizyty',
+      price: '500 zł',
+      indented: true,
     },
   ],
   chir: [

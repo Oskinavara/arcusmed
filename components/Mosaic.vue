@@ -1,5 +1,5 @@
 <template>
-  <div class="mosaic">
+  <div :class="['mosaic', { 'type-2': type === '2', 'type-3': type === '3' }]">
     <div class="mosaic__wrapper">
       <h2 class="mosaic__heading">
         {{ heading }}
@@ -33,12 +33,16 @@ export default {
     smallImage2: {
       type: String,
     },
+    type: {
+      type: String,
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
 .mosaic {
+
   color: white;
   font-family: 'Poppins';
   font-weight: 300;
@@ -46,7 +50,12 @@ export default {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1em;
-  margin: 2rem 0;
+  margin: 6rem 0;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 
   &__wrapper {
     padding: 2em;
@@ -75,6 +84,29 @@ export default {
   &__image-large {
     grid-column: 3 / 5;
     grid-row: 2 / 4;
+  }
+
+  &.type-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .mosaic__wrapper {
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 1;
+    }
+
+    .mosaic__image-1 {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+    }
+    .mosaic__image-2 {
+      grid-column: 4 / span 1;
+      grid-row: 2 / span 1;
+    }
+    .mosaic__image-large {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
   }
 }
 </style>

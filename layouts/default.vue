@@ -18,7 +18,7 @@ export default {
   &__main {
     max-width: $layout-width;
     margin: 0 auto;
-    padding-top: 128px;
+    padding-top: 6rem;
   }
 }
 @import '@/styles/reset.scss';

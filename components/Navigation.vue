@@ -45,7 +45,7 @@ export default {
     padding: 1rem;
     color: $black;
     text-decoration: none;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.2s;
 

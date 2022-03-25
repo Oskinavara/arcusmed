@@ -1,6 +1,6 @@
 <template>
   <section class="contact-section">
-    <div></div>
+    <div style="display: grid;place-items: center">Tutaj bd mapa Google tak sobie to wyobrażam</div>
     <div class="contact-section__right">
       <h2 class="contact-section__heading">Rejestracja</h2>
       <p class="contact-section__info">
@@ -35,7 +35,7 @@ export default {}
 
 <style lang="scss" scoped>
 .contact-section {
-  padding: 3rem;
+  padding: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
