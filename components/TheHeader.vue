@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__inner">
       <nuxt-link class="header__logo" to="/">
-        <img src="/arcus_logo.png" />
+        <img alt="Arcus Med logo" src="/arcus_logo.png" />
       </nuxt-link>
       <Navigation />
       <Hamburger @click="toggleMenu" :open="menuOpen" />

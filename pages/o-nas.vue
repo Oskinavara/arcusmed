@@ -2,7 +2,7 @@
   <div class="o-nas page">
     <div class="o-nas__wrapper">
       <div class="o-nas__image-wrapper">
-        <img src="/arcus/Optimized-IMG_2008.jpg" alt="" />
+        <img width="766" height="511" src="/arcus/Optimized-IMG_2008.jpg" alt="" />
       </div>
       <div class="o-nas__text-wrapper">
         <h2>Przychodnia NZOZ ARCUS-MED</h2>
@@ -23,7 +23,7 @@
     </div>
     <div class="o-nas__wrapper inverted">
       <div class="o-nas__image-wrapper">
-        <img src="/arcus/Optimized-IMG_1915.jpg" alt="" />
+        <img width="665" height="460" src="/arcus/Optimized-IMG_1915.jpg" alt="" />
       </div>
       <div class="o-nas__text-wrapper">
         <h2>NZOZ ARCUS-MED</h2>

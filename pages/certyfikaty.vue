@@ -1,5 +1,5 @@
 <template>
-  <div class="certyfikaty">
+  <div class="certyfikaty page">
     <h1 class="certyfikaty__heading">Certyfikaty</h1>
     <h2 class="certyfikaty__subheading">Monika Zoła-Lizak</h2>
     <div class="certyfikaty__grid">

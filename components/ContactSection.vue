@@ -27,13 +27,13 @@
             <span> Częstochowa, Św. Rocha 17</span>Może bez adresu jak bedzie
             mapa
           </h3> -->
-          <p><img src="@/assets/envelope.svg" />arcusmedrecepcja@gmail.com</p>
+          <p><img alt="" src="@/assets/envelope.svg" />arcusmedrecepcja@gmail.com</p>
           <a href="tel:+(34)3664491">
-            <img src="@/assets/phone-solid.svg" />
+            <img alt="" src="@/assets/phone-solid.svg" />
             (34) 366-44-91
           </a>
           <a href="tel:506407833">
-            <img src="@/assets/phone-solid.svg" />
+            <img alt="" src="@/assets/phone-solid.svg" />
             506 407 833
           </a>
         </address>

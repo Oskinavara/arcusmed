@@ -1,7 +1,7 @@
 <template>
   <div class="oferta page">
     <h1 class="oferta__heading">Oferta</h1>
-    <div class="oferta__flex" id="stomatologia">
+    <!-- <div class="oferta__flex" id="stomatologia">
       <a class="oferta__link" href="#stomatologia">
         <img src="@/assets/tooth-solid.svg" alt="" />
         Poradnia stomatologiczna
@@ -12,7 +12,7 @@
     </div>
     <p style="text-align: center; margin-bottom: 2rem">
       Jeszcze bede pracował nad tymi kafelkami... xd
-    </p>
+    </p> -->
     <Mosaic
       heading="Poradnia stomatologiczna"
       smallImage1="/arcus/Optimized-13.jpg"
@@ -142,6 +142,10 @@ export default {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+  }
+
+  &__heading {
+    padding: 2rem 0;
   }
 
   &__link {

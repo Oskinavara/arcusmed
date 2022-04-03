@@ -181,10 +181,9 @@ export default {
 
   &__section {
     position: relative;
-    padding: 1.5rem;
-    box-shadow: $shadow-4;
-    border-radius: 5px;
-    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: $shadow-3;
+    margin-bottom: 3rem;
     background: $background;
 
     &::after {
@@ -201,7 +200,7 @@ export default {
     &:nth-of-type(2n) {
       &::after {
         left: 20%;
-        bottom: 10%;
+        bottom: 20%;
       }
     }
   }
@@ -213,7 +212,6 @@ export default {
   }
 
   &__subheading {
-    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -228,6 +226,10 @@ export default {
     padding: 0.5rem 1rem;
     &:nth-of-type(2n + 1) {
       background: rgba(black, 0.05);
+    }
+    font-size: 14px;
+    @include sm {
+      font-size: 16px;
     }
 
     &.indented {
