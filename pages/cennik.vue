@@ -175,12 +175,41 @@ export default {
 
 <style lang="scss" scoped>
 .cennik {
-  max-width: 750px;
+  max-width: 820px;
   margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+
+  &__section {
+    position: relative;
+    padding: 1.5rem;
+    box-shadow: $shadow-4;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background: $background;
+
+    &::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background: $primary;
+      position: absolute;
+      left: -20%;
+      bottom: 20%;
+      z-index: -1;
+    }
+
+    &:nth-of-type(2n) {
+      &::after {
+        left: 20%;
+        bottom: 10%;
+      }
+    }
+  }
 
   &__heading {
     padding: 3rem 0;
-    text-transform: uppercase;
+    color: $white;
+    /* text-transform: uppercase; */
   }
 
   &__subheading {
@@ -198,7 +227,7 @@ export default {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     &:nth-of-type(2n + 1) {
-      background: rgba(#e5e5e5, 0.75);
+      background: rgba(black, 0.05);
     }
 
     &.indented {

@@ -16,8 +16,6 @@ export default {
 <style lang="scss">
 .default {
   &__main {
-    max-width: $layout-width;
-    margin: 0 auto;
     padding-top: 6rem;
   }
 }

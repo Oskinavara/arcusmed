@@ -43,7 +43,6 @@ export default {
 <style lang="scss" scoped>
 .mosaic {
   color: white;
-  font-family: 'Poppins';
   font-weight: 300;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -64,13 +63,16 @@ export default {
   }
 
   &__heading {
-    font-family: 'Poppins';
     margin-bottom: 1rem;
     font-weight: 300;
   }
 
   &__description {
     font-size: 14px;
+
+    ul {
+      list-style-type: initial;
+    }
   }
 
   &__image-1 {
@@ -99,6 +101,7 @@ export default {
       grid-row: 2 / span 1;
     }
     .mosaic__image-2 {
+      display: none;
       grid-column: 4 / span 1;
       grid-row: 2 / span 1;
     }
@@ -106,6 +109,10 @@ export default {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
     }
+  }
+
+  &.type-3 {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 }
 </style>

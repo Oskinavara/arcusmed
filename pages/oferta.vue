@@ -1,5 +1,5 @@
 <template>
-  <div class="oferta">
+  <div class="oferta page">
     <h1 class="oferta__heading">Oferta</h1>
     <div class="oferta__flex" id="stomatologia">
       <a class="oferta__link" href="#stomatologia">
@@ -10,7 +10,9 @@
         <img src="@/assets/stethoscope-solid.svg" alt="" />Gabinety lekarskie
       </a>
     </div>
-    <p style="text-align:center;margin-bottom:2rem">Jeszcze bede pracował nad tymi kafelkami... xd</p>
+    <p style="text-align: center; margin-bottom: 2rem">
+      Jeszcze bede pracował nad tymi kafelkami... xd
+    </p>
     <Mosaic
       heading="Poradnia stomatologiczna"
       smallImage1="/arcus/Optimized-13.jpg"
@@ -51,35 +53,49 @@
         nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
       </p>
     </Mosaic>
-    <h2></h2>
-    <h2>Dlaczego leczenie z użyciem mikroskopu jest takie ważne?</h2>
-    <li>
-      Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego opracowania
-      kanałów. Umożliwia lokalizację wszystkich ujść nawet tych niewidocznych „
-      gołym okiem”. Odnalezienie wszystkich kanałów jest kluczowe dla
-      prawidłowego przeprowadzenia leczenia endodontycznego a później
-      długotrwałego sukcesu w leczeniu zęba: braku dolegliwości bólowych oraz
-      braku zmian zapalnych przy wierzchołku korzenia
-    </li>
-    <li>
-      Przy nieprawidłowym leczeniu kanałowym, nawet mimo braku bólu odczuwanego
-      przez pacjenta, proces zapalny może skrycie toczyć się w okolicy
-      wierzchołka korzenia będąc ogniskiem wysiewu bakterii do krwioobiegu, a co
-      za tym idzie przyczyną wielu groźnych chorób ogólnoustrojowych takich jak:
-      zapalenie mięśnia sercowego lub reumatoidalne zapalenie stawów
-    </li>
-    <li>
-      Dodatkowy argument przemawiający za pracą z użyciem mikroskopu to poprawa
-      dokładności w zakresie zabiegów wykonywanych w jamie ustnej oraz
-      wymagających dobrej widoczności i oświetlenia, takich jak: odbudowa i
-      wypełnienia zębów oraz uzupełnienia protetyczne takie jak korony, licówki
-      i mosty .
-    </li>
-    <h2 id="gabinety">Gabinety lekarskie</h2>
-    <div class="oferta__tiles-wrapper">
-      <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
-        <h4>{{ tile.heading }}</h4>
-        <p>{{ tile.content }}</p>
+    <Mosaic
+      type="3"
+      heading="Dlaczego leczenie z użyciem mikroskopu jest takie ważne?"
+      smallImage1="/arcus/Optimized-16.jpg"
+      smallImage2="/arcus/Optimized-20.jpg"
+      largeImage="/arcus/Optimized-22.jpg"
+    >
+      <ul>
+        <li>
+          Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego
+          opracowania kanałów. Umożliwia lokalizację wszystkich ujść nawet tych
+          niewidocznych „ gołym okiem”. Odnalezienie wszystkich kanałów jest
+          kluczowe dla prawidłowego przeprowadzenia leczenia endodontycznego a
+          później długotrwałego sukcesu w leczeniu zęba: braku dolegliwości
+          bólowych oraz braku zmian zapalnych przy wierzchołku korzenia
+        </li>
+        <li>
+          Przy nieprawidłowym leczeniu kanałowym, nawet mimo braku bólu
+          odczuwanego przez pacjenta, proces zapalny może skrycie toczyć się w
+          okolicy wierzchołka korzenia będąc ogniskiem wysiewu bakterii do
+          krwioobiegu, a co za tym idzie przyczyną wielu groźnych chorób
+          ogólnoustrojowych takich jak: zapalenie mięśnia sercowego lub
+          reumatoidalne zapalenie stawów
+        </li>
+        <li>
+          Dodatkowy argument przemawiający za pracą z użyciem mikroskopu to
+          poprawa dokładności w zakresie zabiegów wykonywanych w jamie ustnej
+          oraz wymagających dobrej widoczności i oświetlenia, takich jak:
+          odbudowa i wypełnienia zębów oraz uzupełnienia protetyczne takie jak
+          korony, licówki i mosty .
+        </li>
+      </ul>
+    </Mosaic>
+
+    <div class="oferta__background">
+      <div class="oferta__background-inner">
+        <h2 id="gabinety">Gabinety lekarskie</h2>
+        <div class="oferta__tiles-wrapper">
+          <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
+            <h4>{{ tile.heading }}</h4>
+            <p>{{ tile.content }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -143,21 +159,47 @@ export default {
   }
 
   &__tiles-wrapper {
+    padding: 0 1.5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__tile {
     padding: 2rem;
-    border: 1px solid #ccc;
-
-    &:nth-of-type(2n) {
-      margin-top: 3rem;
-    }
+    background: $white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 20px rgba(black, 0.1);
   }
-  p {
+  p,
+  li {
+    /* font-family: 'Fira Sans Condensed'; */
     padding: 0.5rem 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__background {
+    padding: 2em 0 6rem;
+  }
+
+  &__background-inner {
+    margin: 0 auto;
+    max-width: $layout-width;
+  }
+
+  #gabinety {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  h4 {
+    font-size: 1.6em;
+    margin-bottom: 0.75rem;
   }
 }
 </style>

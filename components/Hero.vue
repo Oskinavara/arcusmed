@@ -2,7 +2,6 @@
   <section class="hero">
     <img
       class="hero__banner"
-      @load="test"
       src="/banner.jpg"
       alt="Zdjęcie przedstawiające dentystkę i pacjentkę na fotelu dentystycznym"
     />
@@ -52,7 +51,6 @@ export default {
     width: 100%;
   }
   &__heading {
-    font-family: 'Poppins';
     font-weight: 300;
     margin: 0.5rem 0 1rem;
   }

@@ -1,5 +1,8 @@
 <template>
-  <ContactSection />
+  <div class="kontakt">
+    <img class="kontakt__background" src="/arcus/Optimized-IMG_2015.jpg" alt="" />
+    <ContactSection />
+  </div>
 </template>
 
 <script>
@@ -11,4 +14,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.kontakt {
+  &__background {
+    object-fit:cover;
+    max-height: 35vh;
+    width: 100%;
+  }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="o-nas">
+  <div class="o-nas page">
     <div class="o-nas__wrapper">
       <div class="o-nas__image-wrapper">
         <img src="/arcus/Optimized-IMG_2008.jpg" alt="" />
@@ -71,7 +71,6 @@ export default {
     margin: 4rem 0;
 
     h2 {
-      font-family: 'Poppins';
       font-weight: 300;
       margin-bottom: 1rem;
     }
@@ -105,10 +104,11 @@ export default {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
     z-index: 2;
-    box-shadow: 0 0 20px rgba(black, 0.05);
+    box-shadow: $shadow-3;
 
     p {
       padding: 0.5em 0;
+      font-weight: 300;
     }
   }
 

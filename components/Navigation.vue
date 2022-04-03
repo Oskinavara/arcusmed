@@ -1,8 +1,12 @@
 <template>
-  <nav class="navigation">
+  <nav :class="['navigation', { mobile }]">
     <ul class="navigation__list">
       <li v-for="link in links" class="navigation__list-item" :key="link.name">
-        <nuxt-link class="navigation__link" :to="link.url">
+        <nuxt-link
+          @click.native="$emit('redirect')"
+          class="navigation__link"
+          :to="link.url"
+        >
           {{ link.name }}
         </nuxt-link>
       </li>
@@ -13,6 +17,12 @@
 <script>
 export default {
   name: 'Navigation',
+  props: {
+    mobile: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       links: [
@@ -30,6 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 .navigation {
+  font-family: 'Fira Sans Condensed', sans-serif;
   place-self: center;
   &__list {
     display: flex;
@@ -52,6 +63,17 @@ export default {
     &.nuxt-link-exact-active,
     &:hover {
       border-bottom: 1px solid rgba($line-gray, 0.4);
+    }
+  }
+
+  &.mobile {
+    .navigation__list {
+      flex-direction: column;
+    }
+
+    .navigation__link {
+      margin: 0.5rem;
+      padding: 0.5rem;
     }
   }
 }

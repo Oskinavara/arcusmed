@@ -130,7 +130,8 @@ table {
 body {
   color: $text-black;
   background: $background;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  // font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-y: scroll;
 }
 
@@ -145,7 +146,6 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -175,5 +175,19 @@ img {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
+}
+
+.page {
+  max-width: $layout-width;
+  margin: 0 auto;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
