@@ -19,6 +19,7 @@ export default {
     object-fit:cover;
     max-height: 35vh;
     width: 100%;
+    object-position: 0 33%;
   }
 }
 </style>

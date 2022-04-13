@@ -2,7 +2,12 @@
   <div class="o-nas page">
     <div class="o-nas__wrapper">
       <div class="o-nas__image-wrapper">
-        <img width="766" height="511" src="/arcus/Optimized-IMG_2008.jpg" alt="" />
+        <img
+          width="766"
+          height="511"
+          src="/arcus/Optimized-IMG_2008.jpg"
+          alt=""
+        />
       </div>
       <div class="o-nas__text-wrapper">
         <h2>Przychodnia NZOZ ARCUS-MED</h2>
@@ -23,7 +28,12 @@
     </div>
     <div class="o-nas__wrapper inverted">
       <div class="o-nas__image-wrapper">
-        <img width="665" height="460" src="/arcus/Optimized-IMG_1915.jpg" alt="" />
+        <img
+          width="665"
+          height="460"
+          src="/arcus/Optimized-IMG_1915.jpg"
+          alt=""
+        />
       </div>
       <div class="o-nas__text-wrapper">
         <h2>NZOZ ARCUS-MED</h2>
@@ -66,68 +76,108 @@ export default {
   }
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 0.15fr 0.8fr;
-    grid-template-rows: 1fr 1fr 0.5fr;
-    margin: 4rem 0;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: auto;
+    margin: 2rem 0;
+    @include md {
+      margin: 4rem 0;
+    }
 
     h2 {
       font-weight: 300;
       margin-bottom: 1rem;
+      font-size: 24px;
+      @include md {
+        font-size: initial;
+      }
     }
 
-    &.inverted {
-      grid-template-rows: 0.5fr 1fr 0.5fr;
-      grid-template-columns: 1fr 0.1fr 0.45fr 0.5fr;
-
-      .o-nas__text-wrapper {
-        grid-column: 1 / span 2;
-        grid-row: 1 / span 2;
-      }
-
-      .o-nas__image-wrapper {
-        grid-column: 2 / span 3;
-        grid-row: 2 / span 2;
-        max-height: 500px;
-        img {
-          z-index: 3;
-        }
-        &::after {
-          transform: translate(-8em, -3em);
-        }
-      }
+    @include md {
+      grid-template-columns: 1fr 0.15fr 0.8fr;
+      grid-template-rows: 1fr 1fr 0.5fr;
     }
   }
 
   &__text-wrapper {
-    padding: 2em;
+    padding: 1.5em;
     background: white;
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
     z-index: 2;
     box-shadow: $shadow-3;
+    @include md {
+      padding: 2em;
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 2;
+    }
 
     p {
       padding: 0.5em 0;
       font-weight: 300;
+      font-size: 12px;
+      @include xs {
+        font-size: 14px;
+      }
+      @include md {
+        font-size: 16px;
+      }
     }
   }
 
   &__image-wrapper {
+    max-height: 45vh;
     position: relative;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    @include md {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
 
     &::after {
-      content: '';
-      z-index: -1;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: $primary;
-      transform: translate(8em, 5em);
+      display: none;
+      @include md {
+        content: '';
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $primary;
+        transform: translate(8em, 5em);
+      }
+    }
+  }
+
+  .inverted {
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    @include md {
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      grid-template-columns: 1fr 0.1fr 0.45fr 0.5fr;
+    }
+
+    .o-nas__text-wrapper {
+      grid-column: 2 / span 2;
+      @include md {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+      }
+    }
+
+    .o-nas__image-wrapper {
+      grid-column: 1 / span 2;
+      @include md {
+        grid-column: 2 / span 3;
+        grid-row: 2 / span 2;
+      }
+      max-height: 500px;
+      img {
+        z-index: 3;
+      }
+      &::after {
+        transform: translate(-8em, -3em);
+      }
     }
   }
 }

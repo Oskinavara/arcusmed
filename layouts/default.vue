@@ -16,7 +16,10 @@ export default {
 <style lang="scss">
 .default {
   &__main {
-    padding-top: 6rem;
+    padding-top: 4.5rem;
+    @include md {
+      padding-top: 6rem;
+    }
   }
 }
 @import '@/styles/reset.scss';

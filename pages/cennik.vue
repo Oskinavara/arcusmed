@@ -177,14 +177,17 @@ export default {
 .cennik {
   max-width: 820px;
   margin: 0 auto;
-  padding: 1rem 1.5rem 4rem;
+  padding: 1rem 1rem 4rem;
 
   &__section {
     position: relative;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: $shadow-3;
     margin-bottom: 3rem;
     background: $background;
+    @include md {
+      padding: 2rem;
+    }
 
     &::after {
       content: '';
@@ -192,15 +195,21 @@ export default {
       width: 100%;
       background: $primary;
       position: absolute;
-      left: -20%;
-      bottom: 20%;
       z-index: -1;
+      left: -1rem;
+      bottom: 20%;
+      @include md {
+        left: -20%;
+      }
     }
 
     &:nth-of-type(2n) {
       &::after {
-        left: 20%;
+        left: 1rem;
         bottom: 20%;
+        @include md {
+          left: 20%;
+        }
       }
     }
   }

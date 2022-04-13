@@ -39,23 +39,39 @@ export default {
   &__wrapper {
     background: rgba(#fff, 0.7);
     backdrop-filter: blur(5px);
-    padding: 2rem 3rem;
     top: 15%;
     left: 40%;
-    position: absolute;
-    max-width: 60%;
+    padding: 1rem 1.5rem;
+    @include md {
+      max-width: 60%;
+      position: absolute;
+      padding: 2rem 3rem;
+    }
   }
   &__banner {
-    max-height: 600px;
+    max-height: 30vh;
     object-fit: cover;
     width: 100%;
+    @include xs {
+      max-height: 600px;
+    }
   }
   &__heading {
     font-weight: 300;
     margin: 0.5rem 0 1rem;
+    font-size: 36px;
+    @include md {
+      font-size: 48px;
+    }
   }
   &__content {
     padding: 0.5rem 0;
+    @include md {
+      font-size: 14px;
+    }
+    @include lg {
+      font-size: 16px;
+    }
   }
 
   .base-button {

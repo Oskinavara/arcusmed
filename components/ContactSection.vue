@@ -27,7 +27,9 @@
             <span> Częstochowa, Św. Rocha 17</span>Może bez adresu jak bedzie
             mapa
           </h3> -->
-          <p><img alt="" src="@/assets/envelope.svg" />arcusmedrecepcja@gmail.com</p>
+          <p>
+            <img alt="" src="@/assets/envelope.svg" />arcusmedrecepcja@gmail.com
+          </p>
           <a href="tel:+(34)3664491">
             <img alt="" src="@/assets/phone-solid.svg" />
             (34) 366-44-91
@@ -45,18 +47,34 @@
 <script>
 export default {}
 </script>
-50.8170766762599, 19.09227190258119
 <style lang="scss" scoped>
 .contact-section {
   background: $primary;
   color: white;
-  padding: 5rem;
+  padding: 1.5rem;
+  @include xs {
+    padding: 3rem;
+  }
+  @include md {
+    padding: 5rem;
+  }
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     margin: 0 auto;
+    grid-template-columns: 1fr;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__map {
+    height: 30vh;
+    grid-row: 2;
+    @include md {
+      height: auto;
+    }
   }
 
   img {
@@ -77,8 +95,10 @@ export default {}
   }
 
   &__right {
-    margin-left: 2rem;
     padding: 1.5rem 0;
+    @include md {
+      margin-left: 2rem;
+    }
   }
 
   a {
