@@ -10,7 +10,7 @@
         />
       </div>
       <div class="o-nas__text-wrapper">
-        <h2>Przychodnia NZOZ ARCUS-MED</h2>
+        <h2>Przychodnia ARCUS-MED</h2>
         <p>
           Przyjazne miejsce nieopodal Jasnej Góry, zlokalizowane w centrum
           Częstochowy przy ul. Św. Rocha 17. Dla naszych pacjentów dostępny jest
@@ -36,9 +36,9 @@
         />
       </div>
       <div class="o-nas__text-wrapper">
-        <h2>NZOZ ARCUS-MED</h2>
+        <h2>ARCUS-MED</h2>
         <p>
-          NZOZ Arcus-Med to przychodnia o profilu stomatologiczno – lekarskim.
+          Arcus-Med to przychodnia o profilu stomatologiczno – lekarskim.
           Powstała jako naturalny efekt zawodowej pasji jej właścicieli.
           Przychodnia jest kontynuacją prowadzonego od 1997 r. gabinetu
           stomatologicznego Moniki Zoły Lizak, oraz gabinetu lekarskiego Adam
@@ -46,14 +46,16 @@
           Częstochowie.
         </p>
         <p>
-          Od początku funkcjonowania NZOZ ARCUS-MED naszym celem jest nowoczesne
-          leczenie pacjentów wynikające z zasad medycyny opartej na faktach
-          (Evidence Based Medicine), holistyczne podejście do Pacjenta oraz
-          profilaktyka chorób cywilizacyjnych. Współpraca z wieloma lekarzami
-          prezentującymi wysoki poziom merytoryczny oraz regularne uczestnictwo
-          w kursach i szkoleniach podnoszących kwalifikacje zawodowe dają
-          nadzieje na spełnienie oczekiwań naszych Pacjentów. Zapraszamy do
-          kontaktu oraz umawiania wizyt z naszymi specjalistami.
+          Arcus-Med Sp z o.o. to gabinety lekarskie o profilu stomatologiczno –
+          lekarskim. Powstały jako naturalny efekt zawodowej pasji jej
+          właścicieli. Od początku funkcjonowania ARCUS-MED naszym celem jest
+          nowoczesne leczenie pacjentów wynikające z zasad medycyny opartej na
+          faktach (Evidence Based Medicine), holistyczne podejście do Pacjenta
+          oraz profilaktyka chorób cywilizacyjnych. Współpraca z wieloma
+          lekarzami prezentującymi wysoki poziom merytoryczny oraz regularne
+          uczestnictwo w kursach i szkoleniach podnoszących kwalifikacje
+          zawodowe dają nadzieje na spełnienie oczekiwań naszych Pacjentów.
+          Zapraszamy do kontaktu oraz umawiania wizyt z naszymi specjalistami.
         </p>
       </div>
     </div>
@@ -77,9 +79,10 @@ export default {
   &__wrapper {
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-template-rows: auto;
     margin: 2rem 0;
     @include md {
+      grid-template-rows: 0.8fr 0.3fr 0.7fr;
+      grid-template-columns: 1fr 0.2fr 0.45fr 0.5fr;
       margin: 4rem 0;
     }
 
@@ -87,14 +90,6 @@ export default {
       font-weight: 300;
       margin-bottom: 1rem;
       font-size: 24px;
-      @include md {
-        font-size: initial;
-      }
-    }
-
-    @include md {
-      grid-template-columns: 1fr 0.15fr 0.8fr;
-      grid-template-rows: 1fr 1fr 0.5fr;
     }
   }
 
@@ -107,7 +102,7 @@ export default {
     box-shadow: $shadow-3;
     @include md {
       padding: 2em;
-      grid-column: 2 / span 2;
+      grid-column: 2 / span 3;
       grid-row: 2 / span 2;
     }
 
@@ -130,8 +125,8 @@ export default {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
     @include md {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
     }
 
     &::after {
@@ -144,7 +139,7 @@ export default {
         width: 100%;
         height: 100%;
         position: absolute;
-        background: $primary;
+        background: var(--primary);
         transform: translate(8em, 5em);
       }
     }

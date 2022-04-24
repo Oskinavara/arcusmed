@@ -22,6 +22,11 @@
           dzwonimy do naszych pacjentów celem przypomnienia o zbliżającej się
           wizycie.
         </p>
+        <p class="contact-section__info">
+          Jeśli nasz telefon będzie zajęty, lub chcesz się z nami skontaktować
+          poza godzinami pracy przychodni prosimy o kontakt mailowy, oddzwonimy
+          w przeciągu 24 godzin.
+        </p>
         <address>
           <!-- <h3>
             <span> Częstochowa, Św. Rocha 17</span>Może bez adresu jak bedzie
@@ -49,7 +54,7 @@ export default {}
 </script>
 <style lang="scss" scoped>
 .contact-section {
-  background: $primary;
+  background: var(--primary);
   color: white;
   padding: 1.5rem;
   @include xs {
@@ -63,6 +68,7 @@ export default {}
     display: grid;
     max-width: 1000px;
     margin: 0 auto;
+    align-items: center;
     grid-template-columns: 1fr;
     @include md {
       grid-template-columns: 1fr 1fr;
@@ -70,10 +76,10 @@ export default {}
   }
 
   &__map {
-    height: 30vh;
-    grid-row: 2;
+    height: 268px;
     @include md {
-      height: auto;
+      height: 400px;
+      /* height: auto; */
     }
   }
 
@@ -91,7 +97,11 @@ export default {}
   &__info {
     padding: 0.5rem 0;
     font-weight: 100;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    @include sm {
+      font-size: 16px;
+    }
   }
 
   &__right {
@@ -99,13 +109,6 @@ export default {}
     @include md {
       margin-left: 2rem;
     }
-  }
-
-  a {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0;
-    font-weight: 300;
   }
 
   h3 {
@@ -123,6 +126,16 @@ export default {}
       font-family: Poppins;
       font-weight: 300;
       padding: 0.5rem 0;
+      font-size: 14px;
+      @include sm {
+        font-size: 16px;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0;
+      font-weight: 300;
     }
   }
 }

@@ -35,13 +35,13 @@ export default {
           name: 'Stomatologia',
           doctors: [
             {
-              name: 'lek stomatolog Monika Zoła Lizak',
+              name: 'lek. stomatolog Monika Zoła Lizak',
               days: 'poniedziałek - piątek',
               hours: '8:00 - 19:00',
               info: 'specjalista I st. stomatologii ogólnej',
             },
             {
-              name: 'lek stomatolog Kamila Krzyniewska',
+              name: 'lek. dentysta Kamila Krzyniewska',
               days: 'poniedziałki, środy, piątki',
               hours: '8:00 - 17:00',
               info: 'specjalista I st. stomatologii ogólnej',
@@ -72,7 +72,7 @@ export default {
               name: 'lek. Piotr Januszewski',
               days: 'wtorek',
               hours: '15:00 - 20:00',
-              info: 'specjalista chirurgii ogólnej, onkologicznej i chirurgii piersi',
+              info: 'specjalista chirurgii ogólnej oraz specjalista chirurgii onkologicznej',
             },
           ],
         },
@@ -98,6 +98,28 @@ export default {
             },
           ],
         },
+        {
+          name: 'Neurologia',
+          doctors: [
+            {
+              name: 'lek. Michał Halkiewicz',
+              days: 'środa',
+              hours: '15:30 - 19:00',
+              info: 'lekarz rezydent w trakcie specjalizacji z neurologii',
+            },
+          ],
+        },
+        {
+          name: 'Gastroenterologia, choroby wewnętrzne',
+          doctors: [
+            {
+              name: 'lek. Alina Niska',
+              days: 'wtorek',
+              hours: '15:00 - 19:00',
+              info: 'specjalista chorób wewnętrznych i gastroenterologii',
+            },
+          ],
+        },
       ],
     }
   },
@@ -109,10 +131,11 @@ export default {
 
 <style lang="scss" scoped>
 .specjalisci {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   h1 {
-    margin-bottom: 4rem;
+    padding: 2rem 0;
   }
   &__section {
     margin-bottom: 2rem;

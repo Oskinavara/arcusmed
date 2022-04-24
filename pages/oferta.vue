@@ -1,18 +1,8 @@
 <template>
   <div class="oferta page">
     <h1 class="oferta__heading">Oferta</h1>
-    <!-- <div class="oferta__flex" id="stomatologia">
-      <a class="oferta__link" href="#stomatologia">
-        <img src="@/assets/tooth-solid.svg" alt="" />
-        Poradnia stomatologiczna
-      </a>
-      <a class="oferta__link" href="#gabinety">
-        <img src="@/assets/stethoscope-solid.svg" alt="" />Gabinety lekarskie
-      </a>
-    </div>
-    <p style="text-align: center; margin-bottom: 2rem">
-      Jeszcze bede pracował nad tymi kafelkami... xd
-    </p> -->
+    <Tiles />
+    <div id="stomatologia"></div>
     <Mosaic
       heading="Poradnia stomatologiczna"
       smallImage1="/arcus/Optimized-13.jpg"
@@ -59,6 +49,7 @@
       smallImage1="/arcus/Optimized-16.jpg"
       smallImage2="/arcus/Optimized-20.jpg"
       largeImage="/arcus/Optimized-22.jpg"
+      style="margin: 0"
     >
       <ul>
         <li>
@@ -86,10 +77,10 @@
         </li>
       </ul>
     </Mosaic>
-
+    <div id="gabinety"></div>
     <div class="oferta__background">
       <div class="oferta__background-inner">
-        <h2 id="gabinety">Gabinety lekarskie</h2>
+        <h2 class="gabinety">Gabinety lekarskie</h2>
         <div class="oferta__tiles-wrapper">
           <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
             <h4>{{ tile.heading }}</h4>
@@ -127,6 +118,16 @@ export default {
           content:
             'Konsultacje w zakresie neurochirurgii i leczenia: chorób kręgosłupa, choróby neurologicznych, choroby Parkinsona, dystonii, drżenia rąk, guzów mózgu, nowotworów rdzenia kręgowego, dyskopatii oraz bólu.',
         },
+        {
+          heading: 'Neurologia',
+          content:
+            'W ramach usług świadczonych przez poradnię neurologiczną oferujemy diagnostykę i leczenie chorób ośrodkowego i obwodowego układu nerwowego. W naszych gabinetach wykonujemy również badanie USG doppler tętnic szyjnych.',
+        },
+        {
+          heading: 'Gastroenterologia',
+          content:
+            'W poradni gastroenterologicznej zajmujemy się zagadnieniami związanymi z profilaktyką, diagnostyką i leczeniem chorób całego przewodu pokarmowego (przełyk, żołądek, jelito cienkie i grube, odbytnica, wątroba, trzustka)',
+        },
       ],
     }
   },
@@ -138,6 +139,10 @@ export default {
 
 <style lang="scss" scoped>
 .oferta {
+  .tiles {
+    padding-bottom: 0;
+  }
+  padding: 0 1.5rem;
   &__flex {
     display: flex;
     justify-content: center;
@@ -145,13 +150,13 @@ export default {
   }
 
   &__heading {
-    padding: 2rem 0;
+    padding: 2rem 0 1rem;
   }
 
   &__link {
     color: white;
     padding: 1rem;
-    background: rgba($primary, 1);
+    background: rgba(var(--primary), 1);
     margin: 0 1rem;
 
     img {
@@ -196,9 +201,14 @@ export default {
     max-width: $layout-width;
   }
 
-  #gabinety {
+  .gabinety {
     text-align: center;
     margin-bottom: 3rem;
+  }
+
+  #gabinety,
+  #stomatologia {
+    padding: 4rem 0 0 0;
   }
 
   h4 {

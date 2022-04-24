@@ -1,15 +1,13 @@
 <template>
   <div>
-    <Hero />
-    <Tiles />
-    <ContactSection />
+
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Główna',
-}
+  export default {
+    
+  }
 </script>
 
 <style lang="scss" scoped>

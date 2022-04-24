@@ -6,10 +6,10 @@
       alt="Zdjęcie przedstawiające dentystkę i pacjentkę na fotelu dentystycznym"
     />
     <div class="hero__wrapper">
-      <p class="hero__subheading">Przychodnia NZOZ</p>
+      <p class="hero__subheading">Przychodnia</p>
       <h1 class="hero__heading">Arcus-Med</h1>
       <p class="hero__content">
-        Przychodnia NZOZ ARCUS-MED to przyjazne miejsce nieopodal Jasnej Góry,
+        Przychodnia ARCUS-MED to przyjazne miejsce nieopodal Jasnej Góry,
         zlokalizowane w centrum Częstochowy przy ul. Św. Rocha 17. Dla naszych
         pacjentów dostępny jest prywatny, bezpłatny parking zlokalizowany na
         posesji.
@@ -66,9 +66,7 @@ export default {
   }
   &__content {
     padding: 0.5rem 0;
-    @include md {
-      font-size: 14px;
-    }
+    font-size: 14px;
     @include lg {
       font-size: 16px;
     }

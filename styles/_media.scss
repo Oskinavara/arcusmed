@@ -17,7 +17,7 @@
 }
 
 @mixin lg {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1150px) {
     @content;
   }
 }

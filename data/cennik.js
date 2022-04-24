@@ -87,11 +87,7 @@ export default {
   ],
   prof: [
     {
-      name: 'Scaling ultradźwiękami usunięcie kamienia, piaskowanie wszystkich zębów',
-      price: '330 zł',
-    },
-    {
-      name: 'Scaling ultradźwiękami usunięcie kamienia, piaskowanie wszystkich zębów',
+      name: 'Scaling ultradźwiękami usunięcie kamienia, piaskowanie wszystkich zębów i lakierowanie',
       price: '380 zł',
     },
     {
@@ -170,10 +166,7 @@ export default {
       name: 'Wybielanie zęba martwego (obejmuje założenie preparatu wybielającego oraz wkładki z wodorotlenku wapnia, nie obejmuje odbudowy po wybielaniu)',
       price: '',
     },
-    { indented: true,
-      name: 'Dwie wizyty',
-      price: '400 zł',
-    },
+    { indented: true, name: 'Dwie wizyty', price: '400 zł' },
     {
       name: 'Trzy wizyty',
       price: '500 zł',

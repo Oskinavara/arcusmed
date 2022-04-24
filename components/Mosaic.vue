@@ -59,7 +59,7 @@ export default {
     padding: 2em;
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    background: $primary;
+    background: var(--primary);
   }
 
   &__heading {

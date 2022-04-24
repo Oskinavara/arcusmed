@@ -183,8 +183,10 @@ export default {
     position: relative;
     padding: 1.5rem;
     box-shadow: $shadow-3;
-    margin-bottom: 3rem;
     background: $background;
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
     @include md {
       padding: 2rem;
     }
@@ -193,7 +195,7 @@ export default {
       content: '';
       height: 100%;
       width: 100%;
-      background: $primary;
+      background: var(--primary);
       position: absolute;
       z-index: -1;
       left: -1rem;

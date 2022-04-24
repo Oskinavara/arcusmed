@@ -4,7 +4,13 @@
       <li v-for="link in links" class="navigation__list-item" :key="link.name">
         <nuxt-link
           @click.native="$emit('redirect')"
-          class="navigation__link"
+          :class="[
+            'navigation__link',
+            {
+              'nuxt-link-exact-active':
+                $route.path.startsWith(link.url) && link.url !== '/',
+            },
+          ]"
           :to="link.url"
         >
           {{ link.name }}
@@ -26,11 +32,13 @@ export default {
   data() {
     return {
       links: [
+        { url: '/', name: 'Strona główna' },
         { url: '/o-nas', name: 'O nas' },
         { url: '/oferta', name: 'Oferta' },
         { url: '/specjalisci', name: 'Specjaliści' },
         { url: '/cennik', name: 'Cennik' },
         { url: '/certyfikaty', name: 'Certyfikaty' },
+        { url: '/galeria', name: 'Galeria' },
         { url: '/kontakt', name: 'Kontakt' },
       ],
     }
@@ -53,12 +61,15 @@ export default {
 
   &__link {
     display: block;
-    padding: 1rem;
+    padding: 1rem 0.2rem;
     color: $black;
     text-decoration: none;
     margin: 1rem 0;
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.2s;
+    @include lg {
+      padding: 1rem;
+    }
 
     &.nuxt-link-exact-active,
     &:hover {

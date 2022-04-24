@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header__inner">
       <nuxt-link class="header__logo" to="/">
-        <img alt="Arcus Med logo" src="/arcus_logo.png" />
+        <img alt="Arcus Med logo" src="@/assets/arcus.svg" />
       </nuxt-link>
       <Navigation />
       <Hamburger @click="toggleMenu" :open="menuOpen" />
@@ -70,9 +70,9 @@ export default {
     color: black;
 
     img {
-      max-width: 9rem;
+      width: 9rem;
       @include md {
-        max-width: 12rem;
+        width: 14rem;
       }
     }
   }

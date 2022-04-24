@@ -124,8 +124,41 @@
         <img src="/certyfikaty/monika_zola/40.jpg" alt="" />
       </a>
     </div>
+    <h2 class="certyfikaty__subheading">Adam Lizak</h2>
+    <div class="certyfikaty__grid">
+      <a href="/certyfikaty/adam_lizak/1.JPG">
+        <img src="/certyfikaty/adam_lizak/1.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/2.JPG">
+        <img src="/certyfikaty/adam_lizak/2.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/3.JPG">
+        <img src="/certyfikaty/adam_lizak/3.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/4.JPG">
+        <img src="/certyfikaty/adam_lizak/4.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/5.JPG">
+        <img src="/certyfikaty/adam_lizak/5.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/6.JPG">
+        <img src="/certyfikaty/adam_lizak/6.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/7.JPG">
+        <img src="/certyfikaty/adam_lizak/7.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/8.JPG">
+        <img src="/certyfikaty/adam_lizak/8.JPG" alt="" />
+      </a>
+      <a href="/certyfikaty/adam_lizak/9.JPG">
+        <img src="/certyfikaty/adam_lizak/9.JPG" alt="" />
+      </a>
+    </div>
     <h2 class="certyfikaty__subheading">Kamila Krzyniewska</h2>
     <div class="certyfikaty__grid">
+      <a href="/certyfikaty/kamila_krzyniewska/1.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/1.jpg" alt="" />
+      </a>
       <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
         <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
       </a>
@@ -141,29 +174,26 @@
       <a href="/certyfikaty/kamila_krzyniewska/6.jpg">
         <img src="/certyfikaty/kamila_krzyniewska/6.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/7.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/7.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/8.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/8.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/9.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/9.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/10.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/10.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/11.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/11.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/12.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/12.jpg" alt="" />
       </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
-      </a>
-      <a href="/certyfikaty/kamila_krzyniewska/2.jpg">
-        <img src="/certyfikaty/kamila_krzyniewska/2.jpg" alt="" />
+      <a href="/certyfikaty/kamila_krzyniewska/13.jpg">
+        <img src="/certyfikaty/kamila_krzyniewska/13.jpg" alt="" />
       </a>
     </div>
   </div>
@@ -179,18 +209,17 @@ export default {
 
 <style lang="scss" scoped>
 .certyfikaty {
+  padding: 0 1.5rem;
+  h1 {
+    padding: 2rem 0 0;
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
   }
-
-  &__heading {
-    margin-bottom: 2rem;
-  }
-
   h2 {
-    margin: 2rem 0;
+    margin: 4rem 0 2rem;
   }
 }
 </style>
