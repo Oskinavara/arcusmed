@@ -15,9 +15,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'robots', content: 'noindex, follow' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Przychodnia Arcus-Med w Częstochowie. Medycyna oparta na faktach - Evidence Based Medicine Poradnia lekarska i gabinety stomatologicznę. Umów wizytę.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
+    script: [{ src: '/init.js' }],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 

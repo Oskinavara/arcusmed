@@ -13,10 +13,10 @@
           :key="doctor.name"
           class="specjalisci__list-item"
         >
-          <h4 class="specjalisci__doctor">
+          <h3 class="specjalisci__doctor">
             <strong>{{ doctor.name }}</strong>
             <span v-if="doctor.info">-</span> {{ doctor.info }}
-          </h4>
+          </h3>
           <p class="specjalisci__appointments">
             {{ `${doctor.days} - ${doctor.hours}` }}
           </p>
@@ -146,22 +146,8 @@ export default {
     &:not(:last-of-type) {
       margin-bottom: 3rem;
     }
-    @include md {
+    @include sm {
       padding: 2rem;
-    }
-
-    &::after {
-      /* content: '';
-      height: 100%;
-      width: 100%;
-      background: var(--primary);
-      position: absolute;
-      z-index: -1;
-      left: -1rem;
-      bottom: 40%;
-      @include md {
-        left: -5%;
-      } */
     }
 
     &:nth-of-type(1),
@@ -203,14 +189,27 @@ export default {
   &__heading {
     margin-bottom: 1rem;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    @include sm {
+      font-size: 2rem;
+    }
   }
   &__doctor {
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    @include sm {
+      font-size: 16px;
+    }
     strong {
       font-weight: 600;
     }
-    font-weight: normal;
-    margin-bottom: 0.25rem;
+  }
+
+  &__appointments {
+    font-size: 15px;
+    @include sm {
+      font-size: 16px;
+    }
   }
 }
 </style>

@@ -2,7 +2,7 @@
   <section class="contact-section">
     <div class="contact-section__wrapper">
       <client-only>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5041.573996716936!2d19.091771498256605!3d50.8165850023146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe2f57d8b990a91b!2sArcus-Med.%20NZOZ.%20Specjalistyczne%20gabinety%20stomatologiczne%20i%20lekarskie!5e0!3m2!1spl!2spl!4v1651762667565!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Google map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5041.573996716936!2d19.091771498256605!3d50.8165850023146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfe2f57d8b990a91b!2sArcus-Med.%20NZOZ.%20Specjalistyczne%20gabinety%20stomatologiczne%20i%20lekarskie!5e0!3m2!1spl!2spl!4v1651762667565!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </client-only>
       <div class="contact-section__right">
         <h2 class="contact-section__heading">Rejestracja</h2>

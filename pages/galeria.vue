@@ -23,7 +23,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Arcus-Med | Specjaliści',
+  },
+}
 </script>
 
 <style lang="scss" scoped>

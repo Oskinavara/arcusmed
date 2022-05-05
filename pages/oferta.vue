@@ -81,7 +81,7 @@
         <h2 class="gabinety">Gabinety lekarskie</h2>
         <div class="oferta__tiles-wrapper">
           <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
-            <h4>{{ tile.heading }}</h4>
+            <h3>{{ tile.heading }}</h3>
             <p>{{ tile.content }}</p>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default {
     padding: 4rem 0 0 0;
   }
 
-  h4 {
+  h3 {
     margin-bottom: 0.75rem;
     font-size: 22px;
     @include sm {
