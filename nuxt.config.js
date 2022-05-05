@@ -23,7 +23,6 @@ export default {
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    script: [{ src: '/init.js' }],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 
