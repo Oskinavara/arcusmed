@@ -1,5 +1,6 @@
 <template>
   <div class="o-nas page">
+    <h1>O nas</h1>
     <div class="o-nas__wrapper">
       <div class="o-nas__image-wrapper">
         <img
@@ -18,11 +19,10 @@
         </p>
         <p>
           Wnętrze naszej przychodni został stworzony z myślą o komforcie naszych
-          pacjentów: klimatyzowane gabinety, poczekalnia, dostęp do
-          bezprzewodowej sieci Wi-Fi, toaleta. Przychodnia przyjazna jest osobom
-          niepełnosprawnym: brak barier architektonicznych, wejście do
-          przychodni bez stopni – z poziomu 0 oraz toaleta dostosowana do
-          potrzeb osób niepełnosprawnych.
+          pacjentów: klimatyzowane gabinety, poczekalnia, toaleta. Przychodnia
+          przyjazna jest osobom niepełnosprawnym: brak barier
+          architektonicznych, wejście do przychodni bez stopni – z poziomu 0
+          oraz toaleta dostosowana do potrzeb osób niepełnosprawnych.
         </p>
       </div>
     </div>
@@ -38,24 +38,19 @@
       <div class="o-nas__text-wrapper">
         <h2>ARCUS-MED</h2>
         <p>
-          Arcus-Med to przychodnia o profilu stomatologiczno – lekarskim.
-          Powstała jako naturalny efekt zawodowej pasji jej właścicieli.
-          Przychodnia jest kontynuacją prowadzonego od 1997 r. gabinetu
-          stomatologicznego Moniki Zoły Lizak, oraz gabinetu lekarskiego Adam
-          Lizaka. Od 1 czerwca 2009 roku jesteśmy przy ulicy św. Rocha 17 w
-          Częstochowie.
-        </p>
-        <p>
           Arcus-Med Sp z o.o. to gabinety lekarskie o profilu stomatologiczno –
           lekarskim. Powstały jako naturalny efekt zawodowej pasji jej
           właścicieli. Od początku funkcjonowania ARCUS-MED naszym celem jest
           nowoczesne leczenie pacjentów wynikające z zasad medycyny opartej na
           faktach (Evidence Based Medicine), holistyczne podejście do Pacjenta
-          oraz profilaktyka chorób cywilizacyjnych. Współpraca z wieloma
-          lekarzami prezentującymi wysoki poziom merytoryczny oraz regularne
-          uczestnictwo w kursach i szkoleniach podnoszących kwalifikacje
-          zawodowe dają nadzieje na spełnienie oczekiwań naszych Pacjentów.
-          Zapraszamy do kontaktu oraz umawiania wizyt z naszymi specjalistami.
+          oraz profilaktyka chorób cywilizacyjnych.
+        </p>
+        <p>
+          Współpraca z wieloma lekarzami prezentującymi wysoki poziom
+          merytoryczny oraz regularne uczestnictwo w kursach i szkoleniach
+          podnoszących kwalifikacje zawodowe dają nadzieje na spełnienie
+          oczekiwań naszych Pacjentów. Zapraszamy do kontaktu oraz umawiania
+          wizyt z naszymi specjalistami.
         </p>
       </div>
     </div>
@@ -72,6 +67,9 @@ export default {
 
 <style lang="scss" scoped>
 .o-nas {
+  @include md {
+    padding: 0 20px;
+  }
   img {
     height: 100%;
     object-fit: cover;
@@ -90,6 +88,12 @@ export default {
       font-weight: 300;
       margin-bottom: 1rem;
       font-size: 24px;
+    }
+  }
+  h1 {
+    padding: 2rem 1.5rem 0;
+    @include md {
+      padding: 2rem 0 1rem;
     }
   }
 

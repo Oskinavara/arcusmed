@@ -13,9 +13,7 @@
         Nasze gabinety stomatologiczne wyposażone są w nowoczesne mikroskopy
         firmy Leica, oraz sprzęt do wykonywania wszystkich
         wysokospecjalistycznych procedur przeprowadzanych w trakcie leczenia
-        kanałowego, protetycznego i zachowawczego. Posiadamy sprzęt do
-        wykonywania zdjęć RTG techniką radiowizjografii, pozwalający na szybką i
-        dokładną diagnostykę problemu pacjenta. Współpracujemy z pracownią
+        kanałowego, protetycznego i zachowawczego. Współpracujemy z pracownią
         wykonująca badania CBCT oraz zdjęcia pantomograficzne
       </p>
       <p>
@@ -98,7 +96,7 @@ export default {
     return {
       tiles: [
         {
-          heading: 'Onkologia Kliniczna, Radioterapia kliniczna',
+          heading: 'Onkologia kliniczna i radioterapia onkologiczna',
           content:
             'Zapewniamy kompleksową opiekę nad Pacjentami z podejrzeniem nowotworu lub zdiagnozowaną chorobą nowotworową: porady w zakresie onkologi klinicznej i radioterapii onkologicznej, kwalifikacja do leczenia systemowego/chemioterapii, immunoterapii i leczenia hormonalnego, kwalifikacja do radioterapii, kontrola po leczeniu napromienianiem oraz diagnostyka ultrasonograficzna chorób piersi.',
         },
@@ -121,7 +119,7 @@ export default {
         {
           heading: 'Neurologia',
           content:
-            'W ramach usług świadczonych przez poradnię neurologiczną oferujemy diagnostykę i leczenie chorób ośrodkowego i obwodowego układu nerwowego. W naszych gabinetach wykonujemy również badanie USG doppler tętnic szyjnych.',
+            'W ramach usług świadczonych przez poradnię neurologiczną oferujemy diagnostykę i leczenie chorób ośrodkowego i obwodowego układu nerwowego. W naszych gabinetach wykonujemy również badanie USG Doppler tętnic szyjnych.',
         },
         {
           heading: 'Gastroenterologia',
@@ -140,7 +138,7 @@ export default {
 <style lang="scss" scoped>
 .oferta {
   .tiles {
-    padding-bottom: 0;
+    padding: 48px 0 0;
   }
   padding: 0 1.5rem;
   &__flex {
@@ -168,7 +166,6 @@ export default {
   }
 
   &__tiles-wrapper {
-    padding: 0 1.5rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;
@@ -212,8 +209,11 @@ export default {
   }
 
   h4 {
-    font-size: 1.6em;
     margin-bottom: 0.75rem;
+    font-size: 22px;
+    @include sm {
+      font-size: 1.6em;
+    }
   }
 }
 </style>

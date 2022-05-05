@@ -1,6 +1,7 @@
 <template>
   <div class="cennik">
-    <h1 class="cennik__heading">Cennik</h1>
+    <Tiles :tiles="tiles" />
+    <h1 id="stoma" class="cennik__heading">Cennik</h1>
     <section class="cennik__section">
       <h2 class="cennik__subheading">Stomatologia zachowawcza</h2>
       <p class="cennik__note">*Cena nie obejmuje ewentualnego znieczulenia</p>
@@ -155,16 +156,83 @@
         </li>
       </ul>
     </section>
+
+    <div id="cennik-gabinety"></div>
+
+    <section class="cennik__section">
+      <h2 class="cennik__subheading">Cennik gabinetów lekarskich</h2>
+      <div
+        class="cennik__gabinet"
+        v-for="gabinet in gabinety"
+        :key="gabinet.name"
+      >
+        <h3 class="cennik__subsubheading">{{ gabinet.name }}</h3>
+        <div
+          class="cennik__wrapper"
+          v-for="doctor in gabinet.doctors"
+          :key="doctor.name"
+        >
+          <p class="cennik__doctor-name">
+            {{ doctor.name }}
+          </p>
+          <ul class="cennik__table">
+            <li
+              :class="['cennik__list-item', { indented: item.indented }]"
+              v-for="item in doctor.items"
+              :key="item.name"
+            >
+              <p class="cennik__name">
+                {{ item.name }}
+              </p>
+              <p class="cennik__price">{{ item.price }} zł</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <ul class="cennik__table">
+        <li
+          :class="['cennik__list-item', { indented: item.indented }]"
+          v-for="item in gabinety[1].doctors"
+          :key="item.name"
+        >
+          <p class="cennik__name">
+            {{ item.name }}
+          </p>
+          <p class="cennik__price">
+            {{ item.price }}
+          </p>
+        </li>
+      </ul> -->
+    </section>
   </div>
 </template>
 
 <script>
-import cennik from '@/data/cennik'
+import cennik, { gabinety } from '@/data/cennik'
 export default {
   name: 'Cennik',
   data() {
     return {
       ...cennik,
+      gabinety,
+      tiles: [
+        {
+          to: {
+            path: '/cennik',
+            hash: '#stoma',
+          },
+          name: 'Stomatologia',
+          image: '/arcus/Optimized-IMG_1921.jpg',
+        },
+        {
+          to: {
+            path: '/cennik',
+            hash: '#cennik-gabinety',
+          },
+          name: 'Gabinety',
+          image: '/arcus/Optimized-IMG_1891.jpg',
+        },
+      ],
     }
   },
   head: {
@@ -178,6 +246,9 @@ export default {
   max-width: 820px;
   margin: 0 auto;
   padding: 1rem 1rem 4rem;
+  .tiles {
+    padding: 3rem 0 3rem;
+  }
 
   &__section {
     position: relative;
@@ -199,8 +270,9 @@ export default {
       position: absolute;
       z-index: -1;
       left: -1rem;
-      bottom: 20%;
+      bottom: 15%;
       @include md {
+        bottom: 20%;
         left: -20%;
       }
     }
@@ -208,8 +280,9 @@ export default {
     &:nth-of-type(2n) {
       &::after {
         left: 1rem;
-        bottom: 20%;
+        bottom: 15%;
         @include md {
+          bottom: 20%;
           left: 20%;
         }
       }
@@ -255,6 +328,29 @@ export default {
   &__price {
     margin-left: 1rem;
     white-space: nowrap;
+  }
+
+  &__subsubheading {
+    padding-bottom: 1rem;
+    font-size: 20px;
+    @include md {
+      font-size: 24px;
+    }
+  }
+
+  &__doctor-name {
+    font-weight: 700;
+  }
+
+  &__gabinet {
+    &:not(:last-of-type) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  #cennik-gabinety {
+    padding-top: 8rem;
+    margin-top: -8rem;
   }
 }
 </style>

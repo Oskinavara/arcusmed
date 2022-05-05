@@ -44,11 +44,16 @@ export default {
 .mosaic {
   color: white;
   font-weight: 300;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1em;
+  grid-template-columns: 1fr;
   margin-bottom: 6rem;
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
   img {
     height: 100%;

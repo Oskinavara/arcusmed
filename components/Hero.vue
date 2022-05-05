@@ -16,8 +16,7 @@
       </p>
       <p class="hero__content">
         Wnętrze naszej przychodni zostało stworzone z myślą o komforcie naszych
-        pacjentów: klimatyzowane gabinety, poczekalnia, dostęp do bezprzewodowej
-        sieci Wi-Fi, toaleta. Przychodnia przyjazna jest osobom
+        pacjentów: klimatyzowane gabinety, poczekalnia, toaleta. Przychodnia przyjazna jest osobom
         niepełnosprawnym: brak barier architektonicznych, wejście do przychodni
         bez stopni – z poziomu 0 oraz toaleta dostosowana do potrzeb osób
         niepełnosprawnych.

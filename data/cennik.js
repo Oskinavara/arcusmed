@@ -210,3 +210,70 @@ export default {
     },
   ],
 }
+
+export const gabinety = [
+  {
+    name: 'Onkologia kliniczna, radioterapia onkologiczna',
+    doctors: [
+      {
+        name: 'lek. Adam Lizak',
+        items: [{ name: 'Konsultacja onkologiczna', price: 200 }],
+      },
+    ],
+  },
+  {
+    name: 'Chirurgia onkologiczna, profilaktyka i diagnostyka chorób piersi',
+    doctors: [
+      {
+        name: 'lek. Piotr Januszewski',
+        items: [{ name: 'Biopsja mammotoniczna', price: 2500 }],
+      },
+      {
+        name: 'lek. Przemysław Jasnowski',
+        items: [{ name: 'Konsultacja z badaniem USG', price: 250 }],
+      },
+    ],
+  },
+  {
+    name: 'Endokrynologia',
+    doctors: [
+      {
+        name: 'lek. Małgorzata Nowicka',
+        items: [
+          { name: 'Konsultacja endokrynologiczna', price: 150 },
+          { name: 'Konsultacja endokrynologiczna z badaniem USG', price: 200 },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Gastroenterologia',
+    doctors: [
+      {
+        name: 'lek. Alina Niska',
+        items: [{ name: 'Konsultacja gastroenterologiczna', price: 200 }],
+      },
+    ],
+  },
+  {
+    name: 'Neurochirurgia',
+    doctors: [
+      {
+        name: 'dr n. med. Tomasz Rynkiewicz',
+        items: [{ name: 'Konsultacja neurochirurgiczna', price: 200 }],
+      },
+    ],
+  },
+  {
+    name: 'Neurologia',
+    doctors: [
+      {
+        name: 'lek. Michał Halkiewicz',
+        items: [
+          { name: 'Konsultacja neurologiczna', price: 150 },
+          { name: 'Badanie USG Doppler tętnic szyjnych', price: 200 },
+        ],
+      },
+    ],
+  },
+]

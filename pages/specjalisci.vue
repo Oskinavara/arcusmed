@@ -14,7 +14,8 @@
           class="specjalisci__list-item"
         >
           <h4 class="specjalisci__doctor">
-            <strong>{{ doctor.name }}</strong> - {{ doctor.info }}
+            <strong>{{ doctor.name }}</strong>
+            <span v-if="doctor.info">-</span> {{ doctor.info }}
           </h4>
           <p class="specjalisci__appointments">
             {{ `${doctor.days} - ${doctor.hours}` }}
@@ -44,7 +45,6 @@ export default {
               name: 'lek. dentysta Kamila Krzyniewska',
               days: 'poniedziałki, środy, piątki',
               hours: '8:00 - 17:00',
-              info: 'specjalista I st. stomatologii ogólnej',
             },
           ],
         },
@@ -131,14 +131,71 @@ export default {
 
 <style lang="scss" scoped>
 .specjalisci {
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 4rem;
   h1 {
     padding: 2rem 0;
+    color: white;
   }
   &__section {
-    margin-bottom: 2rem;
+    position: relative;
+    padding: 1.5rem;
+    box-shadow: $shadow-3;
+    background: $background;
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+    @include md {
+      padding: 2rem;
+    }
+
+    &::after {
+      /* content: '';
+      height: 100%;
+      width: 100%;
+      background: var(--primary);
+      position: absolute;
+      z-index: -1;
+      left: -1rem;
+      bottom: 40%;
+      @include md {
+        left: -5%;
+      } */
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(5) {
+      &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: var(--primary);
+        position: absolute;
+        z-index: -1;
+        left: -1rem;
+        bottom: 40%;
+        @include md {
+          left: -5%;
+        }
+      }
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(7) {
+      &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: var(--primary);
+        position: absolute;
+        z-index: -1;
+        left: 1rem;
+        bottom: 40%;
+        @include md {
+          left: 5%;
+        }
+      }
+    }
   }
   &__list-item {
     padding: 0.5rem 0 0.75rem;
@@ -146,6 +203,7 @@ export default {
   &__heading {
     margin-bottom: 1rem;
     font-weight: 300;
+    font-size: 2rem;
   }
   &__doctor {
     strong {
