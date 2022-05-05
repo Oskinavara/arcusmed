@@ -2,7 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   server: {
-    host: '0.0.0.0' // default: localhost
+    host: '0.0.0.0', // default: localhost
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -18,13 +18,18 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;600&family=Poppins:wght@200;300;400;600&display=swap',
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+  },
+
+  googleFonts: {
+    families: {
+      'Fira+Sans+Condensed': {
+        wght: [400],
       },
-    ],
+      Poppins: {
+        wght: [200, 300, 400, 600],
+      },
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -49,7 +54,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: { transpile: [/^vue2-google-maps($|\/)/] },
 
-  buildModules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources', '@nuxtjs/google-fonts'],
 
   styleResources: {
     scss: ['./styles/index.scss'],

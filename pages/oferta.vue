@@ -182,7 +182,6 @@ export default {
   }
   p,
   li {
-    /* font-family: 'Fira Sans Condensed'; */
     padding: 0.5rem 0;
     font-weight: 300;
     font-size: 14px;
