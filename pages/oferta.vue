@@ -181,8 +181,11 @@ export default {
   li {
     padding: 0.5rem 0;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
+    @include sm {
+      font-size: 16px;
+    }
   }
 
   &__background {
