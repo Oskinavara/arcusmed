@@ -32,13 +32,9 @@
     >
       <p>
         Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
-        zębów pracujemy w lupach zabiegowych w 2, 5 oraz 3,2 krotnym
-        powiększeniu W przypadku leczenia kanałowego zawsze praca odbywa się z
-        użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
-      </p>
-      <p>
-        W przypadku leczenia kanałowego zawsze praca odbywa się z użyciem
-        nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x
+        zębów pracujemy w lupach zabiegowych w 2,5 oraz 3,2-krotnym
+        powiększeniu. W przypadku leczenia kanałowego praca zawsze odbywa się z
+        użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x.
       </p>
     </Mosaic>
     <Mosaic
@@ -52,11 +48,12 @@
       <ul>
         <li>
           Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego
-          opracowania kanałów. Umożliwia lokalizację wszystkich ujść nawet tych
-          niewidocznych „ gołym okiem”. Odnalezienie wszystkich kanałów jest
-          kluczowe dla prawidłowego przeprowadzenia leczenia endodontycznego a
-          później długotrwałego sukcesu w leczeniu zęba: braku dolegliwości
-          bólowych oraz braku zmian zapalnych przy wierzchołku korzenia
+          opracowania kanałów. Umożliwia lokalizację wszystkich ujść kanałów,
+          nawet tych niewidocznych „gołym okiem”. Odnalezienie wszystkich
+          kanałów jest kluczowe dla prawidłowego przeprowadzenia leczenia
+          endodontycznego a później długotrwałego sukcesu w leczeniu zęba: braku
+          dolegliwości bólowych oraz braku zmian zapalnych przy wierzchołku
+          korzenia
         </li>
         <li>
           Przy nieprawidłowym leczeniu kanałowym, nawet mimo braku bólu
@@ -71,7 +68,7 @@
           poprawa dokładności w zakresie zabiegów wykonywanych w jamie ustnej
           oraz wymagających dobrej widoczności i oświetlenia, takich jak:
           odbudowa i wypełnienia zębów oraz uzupełnienia protetyczne takie jak
-          korony, licówki i mosty .
+          korony, licówki i mosty
         </li>
       </ul>
     </Mosaic>
@@ -184,7 +181,7 @@ export default {
   li {
     padding: 0.5rem 0;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
   }
 

@@ -1,5 +1,6 @@
 <template>
   <header class="header">
+    <TopBar />
     <div class="header__inner">
       <nuxt-link class="header__logo" to="/">
         <img alt="Arcus Med logo" src="@/assets/arcus.svg" />

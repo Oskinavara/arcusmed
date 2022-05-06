@@ -1,6 +1,12 @@
 <template>
   <div class="kontakt">
-    <img class="kontakt__background" src="/arcus/Optimized-IMG_2015.jpg" alt="" />
+    <!-- <h1>Zapraszamy do gabinetów!</h1>
+    <p>Poniedziałek - piątek od 8:30 do 19:00</p> -->
+    <img
+      class="kontakt__background"
+      src="/arcus/Optimized-IMG_2015.jpg"
+      alt=""
+    />
     <ContactSection />
   </div>
 </template>
@@ -16,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .kontakt {
   &__background {
-    object-fit:cover;
+    object-fit: cover;
     max-height: 35vh;
     width: 100%;
     object-position: 0 33%;

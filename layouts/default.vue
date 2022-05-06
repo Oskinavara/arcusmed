@@ -1,7 +1,7 @@
 <template>
   <div class="default">
     <TheHeader />
-    <input v-model="color" class="default__input" type="color" name="" id="" />
+    <!-- <input v-model="color" class="default__input" type="color" name="" id="" /> -->
     <main class="default__main">
       <nuxt />
     </main>
@@ -11,26 +11,26 @@
 <script>
 export default {
   name: 'Default',
-  data() {
-    return {
-      color: '#6d558b',
-    }
-  },
-  watch: {
-    color(val) {
-      const root = document.querySelector(':root')
-      root.style.setProperty('--primary', val)
-    },
-  },
+  // data() {
+  //   return {
+  //     color: '#6d558b',
+  //   }
+  // },
+  // watch: {
+  //   color(val) {
+  //     const root = document.querySelector(':root')
+  //     root.style.setProperty('--primary', val)
+  //   },
+  // },
 }
 </script>
 
 <style lang="scss">
 .default {
   &__main {
-    padding-top: 4.5rem;
+    padding-top: 6rem;
     @include md {
-      padding-top: 6rem;
+      padding-top: 7.5rem;
     }
   }
 
