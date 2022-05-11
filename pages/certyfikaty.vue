@@ -388,7 +388,7 @@
 <script>
 export default {
   head: {
-    title: 'Arcus-Med | Certyfikaty',
+    title: 'Certyfikaty | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>

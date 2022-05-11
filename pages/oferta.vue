@@ -5,9 +5,9 @@
     <div id="stomatologia"></div>
     <Mosaic
       heading="Poradnia stomatologiczna"
-      smallImage1="/arcus/Optimized-13.jpg"
-      smallImage2="/arcus/Optimized-15.jpg"
-      largeImage="/arcus/Optimized-14.jpg"
+      smallImage1="https://oskinavara.imgix.net/Optimized-13.jpg?auto=format&w=320"
+      smallImage2="https://oskinavara.imgix.net/Optimized-15.jpg?auto=format&w=320"
+      largeImage="https://oskinavara.imgix.net/Optimized-14.jpg?auto=format&w=650"
     >
       <p>
         Nasze gabinety stomatologiczne wyposażone są w nowoczesne mikroskopy
@@ -26,9 +26,9 @@
     <Mosaic
       type="2"
       heading="Co nas wyróżnia?"
-      smallImage1="/arcus/Optimized-IMG_1977.jpg"
-      smallImage2="/arcus/Optimized-17.jpg"
-      largeImage="/arcus/Optimized-22.jpg"
+      smallImage1="https://oskinavara.imgix.net/Optimized-IMG_1977.jpg?auto=format&w=320"
+      smallImage2="https://oskinavara.imgix.net/Optimized-17.jpg?auto=format&w=320"
+      largeImage="https://oskinavara.imgix.net/Optimized-22.jpg?auto=format&w=650"
     >
       <p>
         Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
@@ -40,9 +40,9 @@
     <Mosaic
       type="3"
       heading="Dlaczego leczenie z użyciem mikroskopu jest takie ważne?"
-      smallImage1="/arcus/Optimized-16.jpg"
-      smallImage2="/arcus/Optimized-20.jpg"
-      largeImage="/arcus/Optimized-22.jpg"
+      smallImage1="https://oskinavara.imgix.net/Optimized-16.jpg?auto=format&w=320"
+      smallImage2="https://oskinavara.imgix.net/Optimized-20.jpg?auto=format&w=320"
+      largeImage="https://oskinavara.imgix.net/Optimized-22.jpg?auto=format&w=650"
       style="margin: 0"
     >
       <ul>
@@ -127,7 +127,7 @@ export default {
     }
   },
   head: {
-    title: 'Arcus-Med | Oferta',
+    title: 'Oferta | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>

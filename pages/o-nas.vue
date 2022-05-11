@@ -6,7 +6,7 @@
         <img
           width="766"
           height="511"
-          src="/arcus/Optimized-IMG_2008.jpg"
+          src="https://oskinavara.imgix.net/Optimized-IMG_2008.jpg?auto=format"
           alt=""
         />
       </div>
@@ -31,7 +31,7 @@
         <img
           width="665"
           height="460"
-          src="/arcus/Optimized-IMG_1915.jpg"
+          src="https://oskinavara.imgix.net/Optimized-IMG_1915.jpg?auto=format"
           alt=""
         />
       </div>
@@ -60,7 +60,7 @@
 <script>
 export default {
   head: {
-    title: 'Arcus-Med | O nas',
+    title: 'O nas | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>

@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Arcus-Med',
+    title: 'ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
     htmlAttrs: {
       lang: 'en',
     },

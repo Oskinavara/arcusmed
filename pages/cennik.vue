@@ -222,7 +222,7 @@ export default {
             hash: '#stoma',
           },
           name: 'Stomatologia',
-          image: '/arcus/Optimized-IMG_1921.jpg',
+          image: 'https://oskinavara.imgix.net/Optimized-IMG_1921.jpg?auto=format',
         },
         {
           to: {
@@ -230,13 +230,13 @@ export default {
             hash: '#cennik-gabinety',
           },
           name: 'Gabinety',
-          image: '/arcus/Optimized-IMG_1891.jpg',
+          image: 'https://oskinavara.imgix.net/Optimized-IMG_1891.jpg?auto=format',
         },
       ],
     }
   },
   head: {
-    title: 'Arcus-Med | Cennik',
+    title: 'Cennik | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>

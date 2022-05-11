@@ -16,7 +16,7 @@ export default {
 .top-bar {
   text-align: center;
   padding: 8px 0;
-  color: darken($background--dark, 20%);
+  color: darken($background--dark, 25%);
   font-weight: 300;
   span,
   a {

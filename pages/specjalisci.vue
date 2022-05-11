@@ -124,7 +124,8 @@ export default {
     }
   },
   head: {
-    title: 'Arcus-Med | Specjaliści',
+    title:
+      'Specjaliści | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>

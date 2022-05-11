@@ -270,7 +270,10 @@ export const gabinety = [
       {
         name: 'lek. Michał Halkiewicz',
         items: [
-          { name: 'Konsultacja neurologiczna', price: 150 },
+          {
+            name: 'Konsultacja neurologiczna (badanie USG Doppler tętnic szyjnych jest zawarte w cenie konsultacji, jeśli istnieje potrzeba jego wykonania)',
+            price: 150,
+          },
           { name: 'Badanie USG Doppler tętnic szyjnych', price: 200 },
         ],
       },

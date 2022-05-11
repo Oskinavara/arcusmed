@@ -14,7 +14,7 @@
 <script>
 export default {
   head: {
-    title: 'Arcus-Med | Kontakt',
+    title: 'Kontakt | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>

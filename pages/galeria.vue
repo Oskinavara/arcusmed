@@ -3,19 +3,19 @@
     <h1>Galeria</h1>
     <div class="galeria__grid">
       <img
-        src="/arcus/galeria1.webp"
+        src="https://oskinavara.imgix.net/galeria1.webp?auto=format"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
       <img
-        src="/arcus/galeria2.webp"
+        src="https://oskinavara.imgix.net/galeria2.webp?auto=format"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
       <img
-        src="/arcus/galeria3.webp"
+        src="https://oskinavara.imgix.net/galeria3.webp?auto=format"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
       <img
-        src="/arcus/galeria4.webp"
+        src="https://oskinavara.imgix.net/galeria4.webp?auto=format"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
     </div>
@@ -25,7 +25,7 @@
 <script>
 export default {
   head: {
-    title: 'Arcus-Med | Specjaliści',
+    title: 'Galeria | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>
