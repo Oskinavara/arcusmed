@@ -28,7 +28,7 @@ export default {
 <style lang="scss">
 .default {
   &__main {
-    padding-top: 6rem;
+    padding-top: 6.5rem;
     @include md {
       padding-top: 7.5rem;
     }
