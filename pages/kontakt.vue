@@ -4,7 +4,7 @@
     <p>Poniedziałek - piątek od 8:30 do 19:00</p> -->
     <img
       class="kontakt__background"
-      src="/arcus/Optimized-IMG_2015.jpg"
+      src="https://oskinavara.imgix.net/Optimized-IMG_2015.jpg?auto=format"
       alt=""
     />
     <ContactSection />

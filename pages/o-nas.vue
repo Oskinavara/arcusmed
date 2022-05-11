@@ -41,9 +41,9 @@
           Arcus-Med Sp z o.o. to gabinety lekarskie o profilu stomatologiczno –
           lekarskim. Powstały jako naturalny efekt zawodowej pasji jej
           właścicieli. Od początku funkcjonowania ARCUS-MED naszym celem jest
-          leczenie pacjentów wynikające z zasad medycyny opartej na
-          faktach (Evidence Based Medicine), holistyczne podejście do Pacjenta
-          oraz profilaktyka chorób cywilizacyjnych.
+          leczenie pacjentów wynikające z zasad medycyny opartej na faktach
+          (Evidence Based Medicine), holistyczne podejście do Pacjenta oraz
+          profilaktyka chorób cywilizacyjnych.
         </p>
         <p>
           Współpraca z wieloma lekarzami prezentującymi wysoki poziom

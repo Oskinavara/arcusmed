@@ -10,7 +10,7 @@
       <h1 class="hero__heading">Arcus-Med</h1>
       <p class="hero__content">
         Przychodnia ARCUS-MED to przychodnia nieopodal Jasnej Góry,
-        zlokalizowana w centrum Częstochowy przy ul. Św. Rocha 17.. Dla naszych
+        zlokalizowana w centrum Częstochowy przy ul. Św. Rocha 17. Dla naszych
         pacjentów dostępny jest prywatny, bezpłatny parking zlokalizowany na
         posesji.
       </p>
