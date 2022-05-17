@@ -2,10 +2,10 @@
   <div class="stoma">
     <div class="stoma__image-wrapper">
       <img
-        src="https://oskinavara.imgix.net/arcus/IMG_1921.jpg?auto=format"
+        src="https://oskinavara.imgix.net/arcus/IMG_1921.jpg?auto=format&w=650"
         alt=""
       />
-      <h3 class="stoma__title">Stomatologia</h3>
+      <h2 class="stoma__title">Stomatologia</h2>
     </div>
     <ul class="stoma__list">
       <li>Leczenie dorosłych i dzieci</li>
