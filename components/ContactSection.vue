@@ -40,6 +40,7 @@ export default {}
 </script>
 <style lang="scss" scoped>
 .contact-section {
+  text-align: left;
   background: var(--primary);
   color: white;
   padding: 1.5rem;
@@ -47,7 +48,7 @@ export default {}
     padding: 3rem;
   }
   @include md {
-    padding: 5rem;
+    padding: 4rem;
   }
 
   &__wrapper {
@@ -87,6 +88,12 @@ export default {}
     font-size: 14px;
     @include sm {
       font-size: 16px;
+    }
+  }
+
+  iframe {
+    @media screen and (max-width: 460px) {
+      max-height: 40vh;
     }
   }
 

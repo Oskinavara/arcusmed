@@ -4,9 +4,9 @@
       <h2 class="mosaic__heading">
         {{ heading }}
       </h2>
-      <p class="mosaic__description">
+      <div class="mosaic__description">
         <slot />
-      </p>
+      </div>
     </div>
     <img class="mosaic__image-1" :src="smallImage1" alt="" />
     <img class="mosaic__image-2" :src="smallImage2" alt="" />

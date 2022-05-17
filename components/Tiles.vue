@@ -25,7 +25,7 @@ export default {
             hash: '#stomatologia',
           },
           name: 'Gabinety stomatologiczne',
-          image: 'https://oskinavara.imgix.net/Optimized-IMG_1921.jpg?auto=format&w=400',
+          image: 'https://oskinavara.imgix.net/arcus/IMG_1921.jpg?auto=format&w=400',
         },
         {
           to: {
@@ -33,7 +33,7 @@ export default {
             hash: '#gabinety',
           },
           name: 'Poradnie lekarskie',
-          image: 'https://oskinavara.imgix.net/Optimized-IMG_1891.jpg?auto=format&w=400',
+          image: 'https://oskinavara.imgix.net/arcus/IMG_1891.jpg?auto=format&w=400',
         },
       ],
     },

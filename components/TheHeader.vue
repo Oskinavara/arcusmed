@@ -56,7 +56,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
+    height: 2.5rem;
     margin: 0 auto;
     padding: 0.75rem 1.25rem;
     @include md {
@@ -71,7 +71,7 @@ export default {
     color: black;
 
     img {
-      width: 9rem;
+      width: 8rem;
       @include md {
         width: 14rem;
       }

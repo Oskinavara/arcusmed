@@ -6,7 +6,7 @@
         <img
           width="766"
           height="511"
-          src="https://oskinavara.imgix.net/Optimized-IMG_2008.jpg?auto=format"
+          src="https://oskinavara.imgix.net/arcus/IMG_2008.jpg?auto=format&w=700"
           alt=""
         />
       </div>
@@ -31,7 +31,7 @@
         <img
           width="665"
           height="460"
-          src="https://oskinavara.imgix.net/Optimized-IMG_1915.jpg?auto=format"
+          src="https://oskinavara.imgix.net/arcus/IMG_1915.jpg?auto=format&w=700"
           alt=""
         />
       </div>
@@ -103,7 +103,7 @@ export default {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     z-index: 2;
-    box-shadow: $shadow-3;
+    box-shadow: 0 0 20px 2px rgb(0 0 0 / 5%);
     @include md {
       padding: 2em;
       grid-column: 2 / span 3;
@@ -113,10 +113,7 @@ export default {
     p {
       padding: 0.5em 0;
       font-weight: 300;
-      font-size: 12px;
-      @include xs {
-        font-size: 14px;
-      }
+      font-size: 14px;
       @include md {
         font-size: 16px;
       }

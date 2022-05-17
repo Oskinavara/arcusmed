@@ -1,85 +1,90 @@
 <template>
-  <div class="oferta page">
-    <h1 class="oferta__heading">Oferta</h1>
-    <Tiles />
-    <div id="stomatologia"></div>
-    <Mosaic
-      heading="Poradnia stomatologiczna"
-      smallImage1="https://oskinavara.imgix.net/Optimized-13.jpg?auto=format&w=320"
-      smallImage2="https://oskinavara.imgix.net/Optimized-15.jpg?auto=format&w=320"
-      largeImage="https://oskinavara.imgix.net/Optimized-14.jpg?auto=format&w=650"
-    >
-      <p>
-        Nasze gabinety stomatologiczne wyposażone są w nowoczesne mikroskopy
-        firmy Leica, oraz sprzęt do wykonywania wszystkich
-        wysokospecjalistycznych procedur przeprowadzanych w trakcie leczenia
-        kanałowego, protetycznego i zachowawczego. Współpracujemy z pracownią
-        wykonująca badania CBCT oraz zdjęcia pantomograficzne
-      </p>
-      <p>
-        Oferujemy kompleksowe leczenie w zakresie stomatologii zachowawczej ze
-        szczególnym uwzględnieniem leczenia kanałowego w powiększeniu,
-        stomatologii estetycznej leczenia protetycznego, chirurgii
-        stomatologicznej i profilaktyki schorzeń przyzębia
-      </p>
-    </Mosaic>
-    <Mosaic
-      type="2"
-      heading="Co nas wyróżnia?"
-      smallImage1="https://oskinavara.imgix.net/Optimized-IMG_1977.jpg?auto=format&w=320"
-      smallImage2="https://oskinavara.imgix.net/Optimized-17.jpg?auto=format&w=320"
-      largeImage="https://oskinavara.imgix.net/Optimized-22.jpg?auto=format&w=650"
-    >
-      <p>
-        Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
-        zębów pracujemy w lupach zabiegowych w 2,5 oraz 3,2-krotnym
-        powiększeniu. W przypadku leczenia kanałowego praca zawsze odbywa się z
-        użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x.
-      </p>
-    </Mosaic>
-    <Mosaic
-      type="3"
-      heading="Dlaczego leczenie z użyciem mikroskopu jest takie ważne?"
-      smallImage1="https://oskinavara.imgix.net/Optimized-16.jpg?auto=format&w=320"
-      smallImage2="https://oskinavara.imgix.net/Optimized-20.jpg?auto=format&w=320"
-      largeImage="https://oskinavara.imgix.net/Optimized-22.jpg?auto=format&w=650"
-      style="margin: 0"
-    >
-      <ul>
-        <li>
-          Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego
-          opracowania kanałów. Umożliwia lokalizację wszystkich ujść kanałów,
-          nawet tych niewidocznych „gołym okiem”. Odnalezienie wszystkich
-          kanałów jest kluczowe dla prawidłowego przeprowadzenia leczenia
-          endodontycznego a później długotrwałego sukcesu w leczeniu zęba: braku
-          dolegliwości bólowych oraz braku zmian zapalnych przy wierzchołku
-          korzenia
-        </li>
-        <li>
-          Przy nieprawidłowym leczeniu kanałowym, nawet mimo braku bólu
-          odczuwanego przez pacjenta, proces zapalny może skrycie toczyć się w
-          okolicy wierzchołka korzenia będąc ogniskiem wysiewu bakterii do
-          krwioobiegu, a co za tym idzie przyczyną wielu groźnych chorób
-          ogólnoustrojowych takich jak: zapalenie mięśnia sercowego lub
-          reumatoidalne zapalenie stawów
-        </li>
-        <li>
-          Dodatkowy argument przemawiający za pracą z użyciem mikroskopu to
-          poprawa dokładności w zakresie zabiegów wykonywanych w jamie ustnej
-          oraz wymagających dobrej widoczności i oświetlenia, takich jak:
-          odbudowa i wypełnienia zębów oraz uzupełnienia protetyczne takie jak
-          korony, licówki i mosty
-        </li>
-      </ul>
-    </Mosaic>
-    <div id="gabinety"></div>
+  <div class="oferta">
+    <TilesBig />
+    <div class="oferta__inner page">
+      <div id="stomatologia"></div>
+      <h1 class="oferta__heading">Oferta</h1>
+      <StomaTile />
+      <Mosaic
+        heading="Poradnia stomatologiczna"
+        smallImage1="https://oskinavara.imgix.net/arcus/13.jpg?auto=format&w=320"
+        smallImage2="https://oskinavara.imgix.net/arcus/15.jpg?auto=format&w=320"
+        largeImage="https://oskinavara.imgix.net/arcus/14.jpg?auto=format&w=650"
+      >
+        <p>
+          Nasze gabinety stomatologiczne wyposażone są w nowoczesne mikroskopy
+          firmy Leica, oraz sprzęt do wykonywania wszystkich
+          wysokospecjalistycznych procedur przeprowadzanych w trakcie leczenia
+          kanałowego, protetycznego i zachowawczego. Współpracujemy z pracownią
+          wykonująca badania CBCT oraz zdjęcia pantomograficzne
+        </p>
+        <p>
+          Oferujemy kompleksowe leczenie w zakresie stomatologii zachowawczej ze
+          szczególnym uwzględnieniem leczenia kanałowego w powiększeniu,
+          stomatologii estetycznej leczenia protetycznego, chirurgii
+          stomatologicznej i profilaktyki schorzeń przyzębia
+        </p>
+      </Mosaic>
+      <Mosaic
+        type="2"
+        heading="Co nas wyróżnia?"
+        smallImage1="https://oskinavara.imgix.net/arcus/IMG_1977.jpg?auto=format&w=320"
+        smallImage2="https://oskinavara.imgix.net/arcus/17.jpg?auto=format&w=320"
+        largeImage="https://oskinavara.imgix.net/arcus/22.jpg?auto=format&w=650"
+      >
+        <p>
+          Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
+          zębów pracujemy w lupach zabiegowych w 2,5 oraz 3,2-krotnym
+          powiększeniu. W przypadku leczenia kanałowego praca zawsze odbywa się
+          z użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x.
+        </p>
+      </Mosaic>
+      <Mosaic
+        type="3"
+        heading="Dlaczego leczenie z użyciem mikroskopu jest takie ważne?"
+        smallImage1="https://oskinavara.imgix.net/arcus/16.jpg?auto=format&w=320"
+        smallImage2="https://oskinavara.imgix.net/arcus/20.jpg?auto=format&w=320"
+        largeImage="https://oskinavara.imgix.net/arcus/23.jpg?auto=format&w=650"
+        style="margin: 0"
+      >
+        <ul>
+          <li>
+            Leczenie z użyciem mikroskopu jest niezbędne dla prawidłowego
+            opracowania kanałów. Umożliwia lokalizację wszystkich ujść kanałów,
+            nawet tych niewidocznych „gołym okiem”. Odnalezienie wszystkich
+            kanałów jest kluczowe dla prawidłowego przeprowadzenia leczenia
+            endodontycznego a później długotrwałego sukcesu w leczeniu zęba:
+            braku dolegliwości bólowych oraz braku zmian zapalnych przy
+            wierzchołku korzenia
+          </li>
+          <li>
+            Przy nieprawidłowym leczeniu kanałowym, nawet mimo braku bólu
+            odczuwanego przez pacjenta, proces zapalny może skrycie toczyć się w
+            okolicy wierzchołka korzenia będąc ogniskiem wysiewu bakterii do
+            krwioobiegu, a co za tym idzie przyczyną wielu groźnych chorób
+            ogólnoustrojowych takich jak: zapalenie mięśnia sercowego lub
+            reumatoidalne zapalenie stawów
+          </li>
+          <li>
+            Dodatkowy argument przemawiający za pracą z użyciem mikroskopu to
+            poprawa dokładności w zakresie zabiegów wykonywanych w jamie ustnej
+            oraz wymagających dobrej widoczności i oświetlenia, takich jak:
+            odbudowa i wypełnienia zębów oraz uzupełnienia protetyczne takie jak
+            korony, licówki i mosty
+          </li>
+        </ul>
+      </Mosaic>
+      <div id="gabinety"></div>
+    </div>
     <div class="oferta__background">
       <div class="oferta__background-inner">
-        <h2 class="gabinety">Gabinety lekarskie</h2>
-        <div class="oferta__tiles-wrapper">
-          <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
-            <h3>{{ tile.heading }}</h3>
-            <p>{{ tile.content }}</p>
+        <div class="gabinety__inner">
+          <h2 class="gabinety__heading">Gabinety lekarskie</h2>
+          <div class="oferta__tiles-wrapper">
+            <div class="oferta__tile" v-for="tile in tiles" :key="tile.heading">
+              <h3>{{ tile.heading }}</h3>
+              <p>{{ tile.content }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +132,8 @@ export default {
     }
   },
   head: {
-    title: 'Oferta | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
+    title:
+      'Oferta | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
 }
 </script>
@@ -137,15 +143,13 @@ export default {
   .tiles {
     padding: 48px 0 0;
   }
-  padding: 0 1.5rem;
+  &__inner {
+    padding: 0 1.5rem;
+  }
   &__flex {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-  }
-
-  &__heading {
-    padding: 2rem 0 1rem;
   }
 
   &__link {
@@ -167,7 +171,7 @@ export default {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;
     @include sm {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
@@ -189,17 +193,44 @@ export default {
   }
 
   &__background {
-    padding: 2em 0 6rem;
+    padding: 2em 0 0;
   }
 
   &__background-inner {
+    background: var(--primary);
     margin: 0 auto;
-    max-width: $layout-width;
+    padding: 2.5rem 0;
+    @include md {
+      padding: 4rem 0;
+    }
   }
 
   .gabinety {
     text-align: center;
     margin-bottom: 3rem;
+
+    &__heading {
+      margin-right: 4rem;
+      color: white;
+      padding-top: 1.5rem;
+      font-size: 42px;
+      margin-bottom: 2rem;
+      @include md {
+        white-space: nowrap;
+        margin-bottom: 0;
+      }
+    }
+
+    &__inner {
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: $layout-width;
+      display: flex;
+      flex-direction: column;
+      @include md {
+        flex-direction: row;
+      }
+    }
   }
 
   #gabinety,
