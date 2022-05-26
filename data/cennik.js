@@ -1,7 +1,7 @@
 export default {
   stom: [
     {
-      name: 'Przegląd, konsultacja, wystawienie recepty, zaświadczenia 100 zł nie powiązane z inną usługą',
+      name: 'Przegląd, konsultacja, wystawienie recepty, zaświadczenia (niepowiązane z inną usługą)',
       price: '100 zł',
     },
     {
@@ -47,15 +47,15 @@ export default {
   ],
   kan: [
     {
-      name: 'Pierwotne leczenie zęba jednokanałowego',
+      name: 'Pierwotne leczenie kanałowe zęba jednokanałowego',
       price: '700 zł',
     },
     {
-      name: 'Pierwotne leczenie zęba dwukanałowego',
+      name: 'Pierwotne leczenie kanałowe zęba dwukanałowego',
       price: '900 zł',
     },
     {
-      name: 'Pierwotne leczenie zęba trzykanałowego czterokanałowego',
+      name: 'Pierwotne leczenie kanałowe zęba trzykanałowego i czterokanałowego',
       price: '1100 zł',
     },
     {
@@ -87,7 +87,11 @@ export default {
   ],
   prof: [
     {
-      name: 'Scaling ultradźwiękami usunięcie kamienia, piaskowanie wszystkich zębów i lakierowanie',
+      name: 'Scaling - usunięcie kamienia ultradźwiękami, piaskowanie wszystkich zębów',
+      price: '330 zł',
+    },
+    {
+      name: 'Scaling - usunięcie kamienia ultradźwiękami, piaskowanie wszystkich zębów i lakierowanie',
       price: '380 zł',
     },
     {
@@ -101,12 +105,8 @@ export default {
   ],
   prot: [
     {
-      name: 'Diagnostyczny wax-up',
-      price: '600 zł',
-    },
-    {
       name: 'Korona porcelanowa na metalu',
-      price: '1070 zł',
+      price: '1100 zł',
     },
     {
       name: 'Korona pełnoceramiczna na cyrkonie, e-max ',
@@ -122,11 +122,11 @@ export default {
     },
     {
       name: 'Proteza szkieletowa',
-      price: '1850 zł',
+      price: '2000 zł',
     },
     {
       name: 'Proteza całkowita',
-      price: '1200 zł',
+      price: '1250 zł',
     },
     {
       name: 'Proteza częściowa',
@@ -151,11 +151,11 @@ export default {
       price: '1500 zł',
     },
     {
-      name: 'Wybielanie nakładkowe zębów ( wykonanie nakładek wybielających, pacjent otrzymuje osiem strzykawek z materiałem wybielającym',
+      name: 'Wybielanie nakładkowe zębów (wykonanie nakładek wybielających, pacjent otrzymuje osiem strzykawek z materiałem wybielającym)',
       price: '1500 zł',
     },
     {
-      name: 'Wybielanie metodą łączoną- gabinetowe i nakładkowe wybielanie',
+      name: 'Wybielanie metodą łączoną - gabinetowe i nakładkowe wybielanie',
       price: '1800 zł',
     },
     {
@@ -195,20 +195,20 @@ export default {
       price: '450 zł',
     },
   ],
-  oklu: [
-    {
-      name: 'Diagnostyczne oprawienie modeli przy pomocy łuku twarzowego w artykulator',
-      price: '300 zł',
-    },
-    {
-      name: 'Wykonanie szyny deprogramacyjnej',
-      price: '1000 zł',
-    },
-    {
-      name: 'Ekwilibracja za wizytę ',
-      price: '300 zł',
-    },
-  ],
+  // oklu: [
+  //   {
+  //     name: 'Diagnostyczne oprawienie modeli przy pomocy łuku twarzowego w artykulator',
+  //     price: '300 zł',
+  //   },
+  //   {
+  //     name: 'Wykonanie szyny deprogramacyjnej',
+  //     price: '1000 zł',
+  //   },
+  //   {
+  //     name: 'Ekwilibracja za wizytę ',
+  //     price: '300 zł',
+  //   },
+  // ],
 }
 
 export const gabinety = [

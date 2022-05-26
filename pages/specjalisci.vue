@@ -17,9 +17,18 @@
             <strong>{{ doctor.name }}</strong>
             <span v-if="doctor.info">-</span> {{ doctor.info }}
           </h3>
-          <p class="specjalisci__appointments">
+          <p v-if="!doctor.alternativeHours" class="specjalisci__appointments">
             {{ `${doctor.days} - ${doctor.hours}` }}
           </p>
+          <template v-else>
+            <p
+              v-for="item in doctor.alternativeHours"
+              :key="item.days"
+              class="specjalisci__appointments"
+            >
+              {{ `${item.days} - ${item.hours}` }}
+            </p>
+          </template>
         </li>
       </ul>
     </section>
@@ -45,6 +54,10 @@ export default {
               name: 'lek. dentysta Kamila Krzyniewska',
               days: 'poniedziałki, środy, piątki',
               hours: '8:00 - 17:00',
+              alternativeHours: [
+                { days: 'poniedziałek, środa', hours: '14:00 - 19:00' },
+                { days: 'piątek', hours: '9:00 - 14:00' },
+              ],
             },
           ],
         },

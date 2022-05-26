@@ -34,7 +34,7 @@
       >
         <p>
           Rutynowo do zabiegów periodontologiczych oraz leczenia zachowawczego
-          zębów pracujemy w lupach zabiegowych w 2,5 oraz 3,2-krotnym
+          zębów pracujemy w lupach zabiegowych w 2.5, 3.2 oraz 4.2-krotnym
           powiększeniu. W przypadku leczenia kanałowego praca zawsze odbywa się
           z użyciem nowoczesnego mikroskopu Leica – w powiększeniu od 5 do 20x.
         </p>

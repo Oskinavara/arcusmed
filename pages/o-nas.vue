@@ -18,7 +18,7 @@
           prywatny, bezpłatny parking zlokalizowany na posesji.
         </p>
         <p>
-          Wnętrze naszej przychodni został stworzony z myślą o komforcie naszych
+          Wnętrze naszej przychodni zostało stworzone z myślą o komforcie naszych
           pacjentów: klimatyzowane gabinety, poczekalnia, toaleta. Przychodnia
           przyjazna jest osobom niepełnosprawnym: brak barier
           architektonicznych, wejście do przychodni bez stopni – z poziomu 0

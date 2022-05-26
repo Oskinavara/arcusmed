@@ -405,7 +405,10 @@ export default {
     grid-gap: 1rem;
   }
   h2 {
-    margin: 4rem 0 2rem;
+    margin: 2rem 0 1.5rem;
+    @include md {
+      margin: 4rem 0 2rem;
+    }
   }
 }
 </style>

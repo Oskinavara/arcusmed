@@ -26,7 +26,7 @@ export default {
           },
           name: 'Gabinety stomatologiczne',
           image:
-            'https://oskinavara.imgix.net/arcus/kafelki1.jpg?auto=format&w=800',
+            'https://oskinavara.imgix.net/arcus/oferta i cennik gabinety stomatologiczne.jpg?auto=format&w=800',
         },
         {
           to: {
@@ -35,7 +35,7 @@ export default {
           },
           name: 'Poradnie lekarskie',
           image:
-            'https://oskinavara.imgix.net/arcus/kafelki2.jpg?auto=format&w=800',
+            'https://oskinavara.imgix.net/arcus/oferta i cennik gabinety lekarskie .jpg?auto=format&w=800',
         },
       ],
     },
