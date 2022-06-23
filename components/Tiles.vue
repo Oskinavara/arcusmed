@@ -25,7 +25,7 @@ export default {
             hash: '#stomatologia',
           },
           name: 'Gabinety stomatologiczne',
-          image: 'https://oskinavara.imgix.net/arcus/14.jpg?auto=format&w=400',
+          image: 'https://oskinavara.imgix.net/arcus/IMG_1927.jpg?auto=format&w=400',
         },
         {
           to: {

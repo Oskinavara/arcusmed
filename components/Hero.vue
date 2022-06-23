@@ -2,7 +2,7 @@
   <section class="hero">
     <img
       class="hero__banner"
-      src="https://oskinavara.imgix.net/arcus/lepsze.jpg?auto=format&w=1600"
+      src="https://oskinavara.imgix.net/arcus/14.jpg?auto=format&w=1900"
       alt="Zdjęcie przedstawiające dentystkę i pacjentkę na fotelu dentystycznym"
     />
     <div class="hero__wrapper">

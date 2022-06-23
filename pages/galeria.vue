@@ -1,24 +1,22 @@
 <template>
   <div class="galeria page">
     <h1>Galeria</h1>
-    <div class="galeria__grid">
-      <img
-        src="https://oskinavara.imgix.net/galeria1.webp?auto=format"
-        alt="Zdjęcia przed i po leczeniu kanałowym"
-      />
-      <img
-        src="https://oskinavara.imgix.net/galeria2.webp?auto=format"
-        alt="Zdjęcia przed i po leczeniu kanałowym"
-      />
-      <img
-        src="https://oskinavara.imgix.net/galeria3.webp?auto=format"
-        alt="Zdjęcia przed i po leczeniu kanałowym"
-      />
-      <img
-        src="https://oskinavara.imgix.net/galeria4.webp?auto=format"
-        alt="Zdjęcia przed i po leczeniu kanałowym"
-      />
-    </div>
+    <h2 class="galeria__subheading">Urazy</h2>
+    <GallerySection
+      imageSrc="https://oskinavara.imgix.net/galeria1.webp?auto=format"
+      class="galeria__first"
+    >
+      <div class="flex">
+        <p class="galeria__description">
+          Przed: Zdjęcie zęba po urazie komunikacyjnym.
+        </p>
+        <p class="galeria__description">
+          Po: Odbudowa utraconego fragmentu zęba za pomocą kompozytu.
+        </p>
+      </div>
+    </GallerySection>
+
+    <h2 class="galeria__subheading">Leczenie kanałowe</h2>
     <GallerySection
       imageSrc="https://oskinavara.imgix.net/arcus/Bula.JPG?auto=format"
     >
@@ -48,6 +46,21 @@
         leczeniu wszystkie dolegliwości minęły.
       </p>
     </GallerySection>
+
+    <div class="galeria__grid">
+      <img
+        src="https://oskinavara.imgix.net/galeria2.webp?auto=format"
+        alt="Zdjęcia przed i po leczeniu kanałowym"
+      />
+      <img
+        src="https://oskinavara.imgix.net/galeria3.webp?auto=format"
+        alt="Zdjęcia przed i po leczeniu kanałowym"
+      />
+      <img
+        src="https://oskinavara.imgix.net/galeria4.webp?auto=format"
+        alt="Zdjęcia przed i po leczeniu kanałowym"
+      />
+    </div>
   </div>
 </template>
 
@@ -70,6 +83,7 @@ export default {
       margin-bottom: 4rem;
     }
   }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -77,9 +91,37 @@ export default {
     margin-bottom: 4rem;
   }
   h2 {
-    margin: 2rem 0 1.5rem;
+    margin: 2rem 0 0;
     @include md {
       margin: 4rem 0 2rem;
+    }
+  }
+
+  &__subheading {
+    text-align: center;
+  }
+
+  &__first {
+    @include md {
+      grid-template-columns: 1fr 1.7fr;
+    }
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    background: var(--primary);
+    padding: 2rem;
+    color: white;
+    margin: 0.8rem 0;
+
+    p {
+      align-self: initial;
+      &:first-of-type {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
