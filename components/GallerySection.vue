@@ -25,12 +25,14 @@ export default {
 .gallery-section {
   @include md {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 3fr;
     grid-gap: 2rem;
   }
   padding: 1.5rem 0;
 
   &.inverted {
+    grid-template-columns: 3fr 2fr;
+
     img {
       grid-column: 2;
       grid-row: 1;
@@ -41,8 +43,9 @@ export default {
     font-size: 18px;
     font-weight: 300;
     align-self: center;
+    line-height: 1.8;
     @include md {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 }

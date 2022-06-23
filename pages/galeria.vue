@@ -8,10 +8,11 @@
     >
       <div class="flex">
         <p class="galeria__description">
-          Przed: Zdjęcie zęba po urazie komunikacyjnym.
+          <span>Przed:</span> Zdjęcie zęba po urazie komunikacyjnym.
         </p>
         <p class="galeria__description">
-          Po: Odbudowa utraconego fragmentu zęba za pomocą kompozytu.
+          <span>Po:</span> Odbudowa utraconego fragmentu zęba za pomocą
+          kompozytu.
         </p>
       </div>
     </GallerySection>
@@ -103,7 +104,7 @@ export default {
 
   &__first {
     @include md {
-      grid-template-columns: 1fr 1.7fr;
+      grid-template-columns: 1.7fr 1.7fr;
     }
   }
   .flex {
@@ -111,17 +112,20 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 600px;
-    background: var(--primary);
-    padding: 2rem;
-    color: white;
-    margin: 0.8rem 0;
+    max-width: 400px;
 
     p {
       align-self: initial;
       &:first-of-type {
         margin-bottom: 2rem;
       }
+    }
+  }
+
+  &__description {
+    span {
+      display: block;
+      font-weight: 600;
     }
   }
 }
