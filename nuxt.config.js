@@ -14,7 +14,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'robots', content: 'noindex, follow' },
       {
         hid: 'description',
         name: 'description',
@@ -54,7 +53,12 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/robots'],
+
+  robots: {
+    UserAgent: '*',
+    Allow: '/'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: { transpile: [/^vue2-google-maps($|\/)/] },
