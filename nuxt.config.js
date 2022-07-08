@@ -1,10 +1,13 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  server: {
-    host: '0.0.0.0', // default: localhost
+  // server: {
+  //   host: '0.0.0.0', // default: localhost
+  // },
+  sitemap: {
+    hostname: 'https://arcusmed.pl',
+    gzip: true
   },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
@@ -53,11 +56,11 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/robots'],
+  modules: ['@nuxtjs/robots', '@nuxtjs/sitemap'],
 
   robots: {
     UserAgent: '*',
-    Allow: '/'
+    Allow: '/',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
