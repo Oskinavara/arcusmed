@@ -6,35 +6,39 @@ export default {
     },
     {
       name: 'Wypełnienie małe jedna powierzchnia',
-      price: '300 zł',
-    },
-    {
-      name: 'Wypełnienie średnie - dwie powierzchnie ',
       price: '330 zł',
     },
     {
-      name: 'Wypełnienie duże trzy powierzchnie',
+      name: 'Wypełnienie średnie - dwie powierzchnie ',
       price: '350 zł',
     },
     {
-      name: 'Wypełnienie powyżej trzech powierzchni',
+      name: 'Wypełnienie duże trzy powierzchnie',
       price: '370 zł',
     },
     {
+      name: 'Wypełnienie powyżej trzech powierzchni',
+      price: '400 - 500 zł',
+    },
+    {
+      name: 'Flow injection, bonding',
+      price: 'od 600 zł',
+    },
+    {
       name: 'Rekonstrukcja zęba - odbudowa na wkładzie z włókna szklanego, pozłacanego lub tytanowego',
-      price: '600 zł',
+      price: '650 zł',
     },
     {
       name: 'Wypełnienie w zębie mlecznym',
-      price: '260 zł',
+      price: '280 zł',
     },
     {
       name: 'Opatrunek w zębie mlecznym',
-      price: '200 zł',
+      price: '210 zł',
     },
     {
       name: 'Szynowanie zębów w zależności od liczby szynowanych zębów',
-      price: 'od 400 zł',
+      price: 'od 450 zł',
     },
     {
       name: 'Znieczulenie nasiękowe',
@@ -48,27 +52,27 @@ export default {
   kan: [
     {
       name: 'Pierwotne leczenie kanałowe zęba jednokanałowego',
-      price: '700 zł',
+      price: '850 zł',
     },
     {
       name: 'Pierwotne leczenie kanałowe zęba dwukanałowego',
-      price: '900 zł',
-    },
-    {
-      name: 'Pierwotne leczenie kanałowe zęba trzykanałowego i czterokanałowego',
-      price: '1100 zł',
-    },
-    {
-      name: 'Powtórne leczenie kanałowe zęba jednokanałowego',
-      price: '800 zł',
-    },
-    {
-      name: 'Powtórne leczenie kanałowe zęba dwukanałowego',
       price: '1000 zł',
     },
     {
+      name: 'Pierwotne leczenie kanałowe zęba trzykanałowego i czterokanałowego',
+      price: '1300 zł',
+    },
+    {
+      name: 'Powtórne leczenie kanałowe zęba jednokanałowego',
+      price: '950 zł',
+    },
+    {
+      name: 'Powtórne leczenie kanałowe zęba dwukanałowego',
+      price: '1150 zł',
+    },
+    {
       name: 'Powtórne leczenie kanałowe zęba trzykanałowego i czterokanałowego',
-      price: '1200 zł',
+      price: '1450 zł',
     },
   ],
   stom2: [
@@ -88,29 +92,33 @@ export default {
   prof: [
     {
       name: 'Scaling - usunięcie kamienia ultradźwiękami, piaskowanie wszystkich zębów',
-      price: '330 zł',
+      price: '350 zł',
     },
     {
       name: 'Scaling - usunięcie kamienia ultradźwiękami, piaskowanie wszystkich zębów i lakierowanie',
-      price: '380 zł',
+      price: '400 zł',
     },
     {
       name: 'Lakierowanie wszystkich zębów jako samodzielny zabieg',
-      price: '200 zł',
+      price: '300 zł',
     },
     {
       name: 'Lakowanie za jeden ząb',
-      price: '100 zł',
+      price: '170 zł',
     },
   ],
   prot: [
     {
+      name: 'Diagnostyczny wax-up',
+      price: '600 zł',
+    },
+    {
       name: 'Korona porcelanowa na metalu',
-      price: '1100 zł',
+      price: '1200 zł',
     },
     {
       name: 'Korona pełnoceramiczna na cyrkonie, e-max ',
-      price: '2000 zł',
+      price: '2200 zł',
     },
     {
       name: 'Onlay, inlay, overlay',
@@ -118,31 +126,41 @@ export default {
     },
     {
       name: 'Licówka e-max',
-      price: '2000 zł',
+      price: '2200 zł',
     },
     {
       name: 'Proteza szkieletowa',
-      price: '2000 zł',
+      price: '2400 zł',
+    },
+    {
+      name: 'Dodatkowo element precyzyjny typu zatrzask lub zasuwa do ceny protezy za sztukę',
+      price: '700 zł',
+      indented: true,
     },
     {
       name: 'Proteza całkowita',
-      price: '1250 zł',
+      price: '1400 zł',
     },
     {
       name: 'Proteza częściowa',
-      price: '850 zł',
+      price: '1000 zł',
     },
     {
-      name: 'Naprawa protezy - sklejenie lub dostawienie jednego zęba lub klamry',
-      price: '150 zł',
+      name: 'Naprawa protezy: sklejenie lub dostawienie jednego zęba lub klamry',
+      price: '200 - 250 zł',
     },
+    {
+      name: 'Naprawa protezy: dostawienie powyżej jednego zęba lub klamry',
+      price: 'od 300 zł',
+    },
+
     {
       name: 'Podścielenie protezy',
-      price: '250 zł',
+      price: '300 zł',
     },
     {
       name: 'Zacementowanie korony wykonanej poza naszą przychodnią',
-      price: '250 zł',
+      price: '300 zł',
     },
   ],
   wyb: [
@@ -155,12 +173,13 @@ export default {
       price: '1500 zł',
     },
     {
-      name: 'Wybielanie metodą łączoną - gabinetowe i nakładkowe wybielanie',
+      name: 'Wybielanie metodą łączoną - gabinetowe i nakładkowe',
       price: '1800 zł',
     },
     {
       name: 'Koszt dokupienia jednej strzykawki z preparatem wybielającym',
-      price: '70 zł',
+      price: '90 zł',
+      indented: true,
     },
     {
       name: 'Wybielanie zęba martwego (obejmuje założenie preparatu wybielającego oraz wkładki z wodorotlenku wapnia, nie obejmuje odbudowy po wybielaniu)',
@@ -168,19 +187,19 @@ export default {
     },
     { indented: true, name: 'Dwie wizyty', price: '400 zł' },
     {
+      indented: true,
       name: 'Trzy wizyty',
       price: '500 zł',
-      indented: true,
     },
   ],
   chir: [
     {
       name: 'Nieskomplikowana ekstrakcja zęba stałego',
-      price: '300 zł',
+      price: '350 zł',
     },
     {
       name: 'Ekstrakcja z dłutowaniem lub separacją korzeni',
-      price: '350 - 400 zł',
+      price: '350 - 450 zł',
     },
     {
       name: 'Ekstrakcja zęba mlecznego',
@@ -195,20 +214,20 @@ export default {
       price: '450 zł',
     },
   ],
-  // oklu: [
-  //   {
-  //     name: 'Diagnostyczne oprawienie modeli przy pomocy łuku twarzowego w artykulator',
-  //     price: '300 zł',
-  //   },
-  //   {
-  //     name: 'Wykonanie szyny deprogramacyjnej',
-  //     price: '1000 zł',
-  //   },
-  //   {
-  //     name: 'Ekwilibracja za wizytę ',
-  //     price: '300 zł',
-  //   },
-  // ],
+  oklu: [
+    {
+      name: 'Diagnostyczne oprawienie modeli przy pomocy łuku twarzowego w artykulator',
+      price: '350 zł',
+    },
+    {
+      name: 'Wykonanie szyny deprogramacyjnej',
+      price: '1000 zł',
+    },
+    {
+      name: 'Ekwilibracja za wizytę ',
+      price: '300 zł',
+    },
+  ],
 }
 
 export const gabinety = [

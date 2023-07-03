@@ -134,7 +134,7 @@
           </li>
         </ul>
       </section>
-      <!-- <section class="cennik__section">
+      <section class="cennik__section">
         <h2 class="cennik__subheading">Choroba okluzyjna</h2>
         <ul class="cennik__table">
           <li
@@ -150,7 +150,7 @@
             </p>
           </li>
         </ul>
-      </section> -->
+      </section>
       <div id="cennik-gabinety"></div>
       <section class="cennik__section">
         <h2 class="cennik__subheading">Cennik gabinetów lekarskich</h2>
