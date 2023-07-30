@@ -51,7 +51,7 @@ export default {
           name: 'Stomatologia',
           doctors: [
             {
-              name: 'lek. stomatolog Monika Zoła Lizak',
+              name: 'lek. stomatolog Monika Zoła-Lizak',
               days: 'poniedziałek - piątek',
               hours: '8:00 - 19:00',
               info: 'specjalista I st. stomatologii ogólnej',
