@@ -79,19 +79,29 @@ export default {
           ],
         },
         {
-          name: 'Chirurgia onkologiczna, Profilaktyka i diagnostyka chorób piersi',
+          name: 'Onkologia kliniczna',
           doctors: [
             {
-              name: 'lek. Przemysław Jasnowski',
+              name: 'lek. Dorota Bogus',
+              info: 'specjalista onkologii klinicznej',
+            },
+          ],
+        },
+        {
+          name: 'Chirurgia onkologiczna, profilaktyka i diagnostyka chorób piersi',
+          doctors: [
+            {
+              name: 'lek. Piotr Januszewski',
               days: 'wtorek',
               hours: '15:00 - 20:00',
               info: 'specjalista chirurgii ogólnej oraz specjalista chirurgii onkologicznej',
             },
             {
               name: 'lek. Piotr Januszewski',
-              days: 'wtorek',
-              hours: '15:00 - 20:00',
-              info: 'specjalista chirurgii ogólnej oraz specjalista chirurgii onkologicznej',
+              days: 'środa',
+              hours:
+                '16:00 - 17:00 (po wcześniejszej rejestracji telefonicznej)',
+              info: 'współpraca w zakresie biopsji mammotomicznej wspomaganej próżnią',
             },
           ],
         },
