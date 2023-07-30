@@ -129,6 +129,17 @@ export default {
           ],
         },
         {
+          name: 'Chirurgia urazowo-ortopedyczna',
+          doctors: [
+            {
+              name: 'lek. Jacek Niski',
+              days: 'wtorek',
+              hours: '17:00 - 19:00',
+              info: 'specjalista chirurgii urazowo-ortopedycznej',
+            },
+          ],
+        },
+        {
           name: 'Gastroenterologia, choroby wewnętrzne',
           doctors: [
             {
