@@ -70,7 +70,7 @@
             poprawa dokładności w zakresie zabiegów wykonywanych w jamie ustnej
             oraz wymagających dobrej widoczności i oświetlenia, takich jak:
             odbudowa i wypełnienia zębów oraz uzupełnienia protetyczne takie jak
-            korony, licówki i mosty
+            korony, licówki i mosty.
           </li>
         </ul>
       </Mosaic>
@@ -104,14 +104,14 @@ export default {
         },
         {
           heading:
-            'Chirurgia onkologiczna, Profilaktyka i diagnostyka chorób piersi',
+            'Chirurgia onkologiczna, profilaktyka i diagnostyka chorób piersi',
           content:
             'Doświadczeni lekarze chirurdzy onkologiczni i specjaliści z zakresu chirurgii plastycznej, wykonują diagnostykę ultrasonograficzną (USG) chorób piersi, biopsję cienko-igłową i grubo-igłową, oraz biopsję mammotomiczną piersi.',
         },
         {
           heading: 'Endokrynologia',
           content:
-            'Konsultacje w zakresie endokrynologii, diagnostyka USG tarczycy. Leczone choroby: choroba Hashimoto, niedoczynność tarczycy, nadczynność tarczycy, zaburzenia osi przysadkowo-nadnerczowej, zaburzenia hormonalne u kobiet i mężczyzn',
+            'Konsultacje w zakresie endokrynologii, diagnostyka USG tarczycy. Leczone choroby: choroba Hashimoto, niedoczynność tarczycy, nadczynność tarczycy, zaburzenia osi przysadkowo-nadnerczowej, zaburzenia hormonalne u kobiet i mężczyzn.',
         },
         {
           heading: 'Neurochirurgia',
@@ -124,9 +124,14 @@ export default {
             'W ramach usług świadczonych przez poradnię neurologiczną oferujemy diagnostykę i leczenie chorób ośrodkowego i obwodowego układu nerwowego. W naszych gabinetach wykonujemy również badanie USG Doppler tętnic szyjnych.',
         },
         {
+          heading: 'Chirurgia urazowo-ortopedyczna',
+          content:
+            'Porady w zakresie chirurgii urazowo ortopedycznej, diagnostyka, usg stawów.',
+        },
+        {
           heading: 'Gastroenterologia',
           content:
-            'W poradni gastroenterologicznej zajmujemy się zagadnieniami związanymi z profilaktyką, diagnostyką i leczeniem chorób całego przewodu pokarmowego (przełyk, żołądek, jelito cienkie i grube, odbytnica, wątroba, trzustka)',
+            'W poradni gastroenterologicznej zajmujemy się zagadnieniami związanymi z profilaktyką, diagnostyką i leczeniem chorób całego przewodu pokarmowego (przełyk, żołądek, jelito cienkie i grube, odbytnica, wątroba, trzustka).',
         },
       ],
     }
