@@ -32,6 +32,12 @@
         </li>
       </ul>
     </section>
+    <p class="specjalisci__disclaimer">
+      Podane ceny usług medycznych są publikowane w celach informacyjnych i nie
+      stanowią oferty handlowej wg. art. 66 par. 1 Kodeksu Cywilnego. Podane
+      ceny mogą ulec zmianie. Arcus-Med Sp. z o.o. zastrzega sobie prawo do
+      zmian.
+    </p>
   </div>
 </template>
 
@@ -224,6 +230,11 @@ export default {
     @include sm {
       font-size: 16px;
     }
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+    margin-top: 2rem;
   }
 }
 </style>
