@@ -68,7 +68,7 @@ export default {
           ],
         },
         {
-          name: 'Onkologia Kliniczna, Radioterapia kliniczna',
+          name: 'Onkologia kliniczna, radioterapia onkologiczna',
           doctors: [
             {
               name: 'lek. Adam Lizak',
