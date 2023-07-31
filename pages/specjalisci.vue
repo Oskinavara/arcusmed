@@ -27,6 +27,7 @@
               class="specjalisci__appointments"
             >
               {{ `${item.days} - ${item.hours}` }}
+              <span class="specjalisci__info">{{ item.additionalInfo }}</span>
             </p>
           </template>
         </li>
@@ -83,6 +84,8 @@ export default {
           doctors: [
             {
               name: 'lek. Dorota Bogus',
+              days: 'wtorek',
+              hours: '16:00 - 18:00',
               info: 'specjalista onkologii klinicznej',
             },
           ],
@@ -95,13 +98,18 @@ export default {
               days: 'wtorek',
               hours: '15:00 - 20:00',
               info: 'specjalista chirurgii ogólnej oraz specjalista chirurgii onkologicznej',
-            },
-            {
-              name: 'lek. Piotr Januszewski',
-              days: 'środa',
-              hours:
-                '16:00 - 17:00 (po wcześniejszej rejestracji telefonicznej)',
-              info: 'współpraca w zakresie biopsji mammotomicznej wspomaganej próżnią',
+
+              days: 'wtorki, środy',
+              hours: '8:00 - 17:00',
+              alternativeHours: [
+                { days: 'wtorek', hours: '15:00 - 20:00' },
+                {
+                  days: 'środa',
+                  hours: '16:00 - 17:00 ',
+                  additionalInfo:
+                    '(po wcześniejszej rejestracji telefonicznej) - współpraca w zakresie biopsji mammotomicznej wspomaganej próżnią',
+                },
+              ],
             },
           ],
         },
@@ -142,7 +150,7 @@ export default {
           name: 'Chirurgia urazowo-ortopedyczna',
           doctors: [
             {
-              name: 'lek. Jacek Niski',
+              name: 'lek. med. Jacek Niski',
               days: 'wtorek',
               hours: '17:00 - 19:00',
               info: 'specjalista chirurgii urazowo-ortopedycznej',
@@ -251,6 +259,10 @@ export default {
     @include sm {
       font-size: 16px;
     }
+  }
+
+  &__info {
+    font-weight: 300;
   }
 
   &__disclaimer {
