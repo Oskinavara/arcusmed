@@ -241,15 +241,20 @@ export const gabinety = [
     ],
   },
   {
+    name: 'Onkologia kliniczna',
+    doctors: [
+      {
+        name: 'lek. Dorota Bogus',
+        items: [{ name: 'Konsultacja onkologiczna', price: 250 }],
+      },
+    ],
+  },
+  {
     name: 'Chirurgia onkologiczna, profilaktyka i diagnostyka chorób piersi',
     doctors: [
       {
         name: 'lek. Piotr Januszewski',
         items: [{ name: 'Biopsja mammotoniczna', price: 2500 }],
-      },
-      {
-        name: 'lek. Przemysław Jasnowski',
-        items: [{ name: 'Konsultacja z badaniem USG', price: 250 }],
       },
     ],
   },
@@ -259,9 +264,18 @@ export const gabinety = [
       {
         name: 'lek. Małgorzata Nowicka',
         items: [
-          { name: 'Konsultacja endokrynologiczna', price: 150 },
-          { name: 'Konsultacja endokrynologiczna z badaniem USG', price: 200 },
+          { name: 'Konsultacja endokrynologiczna', price: 200 },
+          { name: 'Konsultacja endokrynologiczna z badaniem USG', price: 250 },
         ],
+      },
+    ],
+  },
+  {
+    name: 'Chirurgia urazowo-ortopedyczna',
+    doctors: [
+      {
+        name: 'lek. Jacek Niski',
+        items: [{ name: 'Konsultacja ortopedyczna', price: 250 }],
       },
     ],
   },
@@ -270,7 +284,7 @@ export const gabinety = [
     doctors: [
       {
         name: 'lek. Alina Niska',
-        items: [{ name: 'Konsultacja gastroenterologiczna', price: 200 }],
+        items: [{ name: 'Konsultacja gastroenterologiczna', price: 250 }],
       },
     ],
   },
@@ -279,7 +293,7 @@ export const gabinety = [
     doctors: [
       {
         name: 'dr n. med. Tomasz Rynkiewicz',
-        items: [{ name: 'Konsultacja neurochirurgiczna', price: 200 }],
+        items: [{ name: 'Konsultacja neurochirurgiczna', price: 250 }],
       },
     ],
   },

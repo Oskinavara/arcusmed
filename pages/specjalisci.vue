@@ -27,11 +27,18 @@
               class="specjalisci__appointments"
             >
               {{ `${item.days} - ${item.hours}` }}
+              <span class="specjalisci__info">{{ item.additionalInfo }}</span>
             </p>
           </template>
         </li>
       </ul>
     </section>
+    <p class="specjalisci__disclaimer">
+      Podane ceny usług medycznych są publikowane w celach informacyjnych i nie
+      stanowią oferty handlowej wg. art. 66 par. 1 Kodeksu Cywilnego. Podane
+      ceny mogą ulec zmianie. Arcus-Med Sp. z o.o. zastrzega sobie prawo do
+      zmian.
+    </p>
   </div>
 </template>
 
@@ -45,7 +52,7 @@ export default {
           name: 'Stomatologia',
           doctors: [
             {
-              name: 'lek. stomatolog Monika Zoła Lizak',
+              name: 'lek. stomatolog Monika Zoła-Lizak',
               days: 'poniedziałek - piątek',
               hours: '8:00 - 19:00',
               info: 'specjalista I st. stomatologii ogólnej',
@@ -62,7 +69,7 @@ export default {
           ],
         },
         {
-          name: 'Onkologia Kliniczna, Radioterapia kliniczna',
+          name: 'Onkologia kliniczna, radioterapia onkologiczna',
           doctors: [
             {
               name: 'lek. Adam Lizak',
@@ -73,19 +80,36 @@ export default {
           ],
         },
         {
-          name: 'Chirurgia onkologiczna, Profilaktyka i diagnostyka chorób piersi',
+          name: 'Onkologia kliniczna',
           doctors: [
             {
-              name: 'lek. Przemysław Jasnowski',
+              name: 'lek. Dorota Bogus',
               days: 'wtorek',
-              hours: '15:00 - 20:00',
-              info: 'specjalista chirurgii ogólnej oraz specjalista chirurgii onkologicznej',
+              hours: '16:00 - 18:00',
+              info: 'specjalista onkologii klinicznej',
             },
+          ],
+        },
+        {
+          name: 'Chirurgia onkologiczna, profilaktyka i diagnostyka chorób piersi',
+          doctors: [
             {
               name: 'lek. Piotr Januszewski',
               days: 'wtorek',
               hours: '15:00 - 20:00',
               info: 'specjalista chirurgii ogólnej oraz specjalista chirurgii onkologicznej',
+
+              days: 'wtorki, środy',
+              hours: '8:00 - 17:00',
+              alternativeHours: [
+                { days: 'wtorek', hours: '15:00 - 20:00' },
+                {
+                  days: 'środa',
+                  hours: '16:00 - 17:00 ',
+                  additionalInfo:
+                    '(po wcześniejszej rejestracji telefonicznej) - współpraca w zakresie biopsji mammotomicznej wspomaganej próżnią',
+                },
+              ],
             },
           ],
         },
@@ -119,6 +143,17 @@ export default {
               days: 'środa',
               hours: '15:30 - 19:00',
               info: 'lekarz rezydent w trakcie specjalizacji z neurologii',
+            },
+          ],
+        },
+        {
+          name: 'Chirurgia urazowo-ortopedyczna',
+          doctors: [
+            {
+              name: 'lek. med. Jacek Niski',
+              days: 'wtorek',
+              hours: '17:00 - 19:00',
+              info: 'specjalista chirurgii urazowo-ortopedycznej',
             },
           ],
         },
@@ -224,6 +259,15 @@ export default {
     @include sm {
       font-size: 16px;
     }
+  }
+
+  &__info {
+    font-weight: 300;
+  }
+
+  &__disclaimer {
+    font-size: 12px;
+    margin-top: 2rem;
   }
 }
 </style>
