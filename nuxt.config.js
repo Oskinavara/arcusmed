@@ -6,7 +6,7 @@ export default {
   // },
   sitemap: {
     hostname: 'https://arcusmed.pl',
-    gzip: true
+    gzip: true,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -26,6 +26,24 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    script: [
+      {
+        hid: 'gtm-script1',
+        src: 'https://www.googletagmanager.com/gtag/js?id=UA-111111111-1',
+        defer: true,
+      },
+      {
+        hid: 'gtm-script2',
+        innerHtml: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16483909822');
+`,
+        type: 'text/javascript',
+        charset: 'utf-8',
+      },
+    ],
   },
 
   googleFonts: {
