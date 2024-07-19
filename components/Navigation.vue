@@ -2,7 +2,8 @@
   <nav :class="['navigation', { mobile }]">
     <ul class="navigation__list">
       <li v-for="link in links" class="navigation__list-item" :key="link.name">
-        <nuxt-link
+        <component
+          :is="isStaticLink(link.url) ? 'a' : 'nuxt-link'"
           @click.native="$emit('redirect')"
           :class="[
             'navigation__link',
@@ -11,10 +12,11 @@
                 $route.path.startsWith(link.url) && link.url !== '/',
             },
           ]"
-          :to="link.url"
+          :href="isStaticLink(link.url) ? link.url : null"
+          :to="!isStaticLink(link.url) ? link.url : null"
         >
           {{ link.name }}
-        </nuxt-link>
+        </component>
       </li>
     </ul>
   </nav>
@@ -39,11 +41,18 @@ export default {
         { url: '/cennik', name: 'Cennik' },
         { url: '/certyfikaty', name: 'Certyfikaty' },
         { url: '/galeria', name: 'Galeria' },
+        { url: '/rejestracja-online/', name: 'Rejestracja online' },
         { url: '/kontakt', name: 'Kontakt' },
       ],
-    }
+    };
   },
-}
+  methods: {
+    isStaticLink(url) {
+      // Add logic to determine if the URL is for a non-Nuxt file
+      return url.startsWith('/rejestracja-online/');
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
