@@ -117,4 +117,11 @@ export default {
   serverMiddleware: [
     { path: '/rejestracja-online', handler: '~/serverMiddleware/proxy.js' }
   ],
+
+  // Exclude SmartDental PHP online booking page from Nuxt route generation
+  generate: {
+    exclude: [
+      /^\/rejestracja-online/
+    ],
+  },
 }
