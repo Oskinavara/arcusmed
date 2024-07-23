@@ -1,0 +1,374 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    /* Default is row, but it's good to be explicit */
+    max-width: 1200px;
+    /* Optional - Set a max width for the whole layout */
+    margin: 0 auto;
+    /* Optional - Center the layout horizontally */
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    #container {
+        flex-direction: column;
+        /* Stack columns vertically on small screens */
+    }
+}
+
+/*
+#container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+*/
+
+#content {
+    padding: 10px;
+    flex: 1;
+    /* width: auto; */
+    /* max-width: 800px; */
+}
+
+#sidebar {
+    flex: 1;
+    padding: 10px;
+}
+
+@media (max-width: 980px) {
+    #sidebar {
+        width: 100% !important;
+    }
+}
+
+.loginTitle {
+
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#login-container {}
+
+#loggedUser {
+
+    margin: 5px;
+}
+
+.red-date {
+    background-color: red;
+    /* Set the background color to red */
+    color: white;
+    /* Set the text color to white */
+    /* Add any additional styles as needed */
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.dx-calendar-cell:not(.dx-calendar-other-month) .weekend,
+.dx-calendar-cell:not(.dx-calendar-other-month) .holiday {
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.dx-calendar-cell:not(.dx-calendar-other-month) .weekend {
+    color: #3030ff;
+}
+
+.dx-state-disabled.dx-calendar .dx-calendar-cell:not(.dx-calendar-other-month) .weekend {
+    color: #8080ff;
+}
+
+.dx-calendar-cell:not(.dx-calendar-other-month) .holiday {
+    color: #ff3030;
+}
+
+.dx-state-disabled.dx-calendar .dx-calendar-cell:not(.dx-calendar-other-month) .holiday {
+    color: #ff8080;
+}
+
+.dx-calendar-week-number-cell .week-number {
+    font-style: italic;
+}
+
+
+
+/* General styles */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+.dx-fieldset {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Login form */
+#login-container {
+    display: none;
+}
+
+#userDataForm {
+    margin-top: 20px;
+}
+
+/* Menu */
+#menu {
+    margin-top: 20px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    /* Prevent text selection */
+}
+
+#menu ul li:last-child {
+    border-bottom: none;
+}
+
+#menu ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show/hide active menu */
+#menu .active {
+    color: #f00;
+    font-weight: bold;
+}
+
+#menu .active:before {
+    content: "▶";
+    padding-right: 5px;
+}
+
+/* Show/hide login/logout menu */
+#login-menu {
+    display: block;
+}
+
+#logout-menu {
+    display: none;
+}
+
+.calendar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.calendar-details a.calendar-link {
+    font-size: 18px;
+    color: steelblue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.calendar-details a.calendar-link:hover {
+    color: darkblue;
+}
+
+.calendar-details .additional-info {
+    font-size: 14px;
+    color: #777;
+}
+
+.custom-size {
+    font-size: 2.0rem;
+    /* Adjust the size as needed */
+}
+
+.appointment-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    flex-shrink: 0;
+    /* Prevent the avatar from shrinking */
+    margin-right: 15px;
+}
+
+.custom-size {
+    font-size: 24px;
+    color: #555;
+}
+
+.info {
+    flex: 1;
+    /* Take all available space to allow text to wrap */
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.additional-info {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Additional styling for calendar and appointments divs (adjust as needed) */
+#calendar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Add more styles here */
+}
+
+.date-label {
+
+
+    margin-bottom: 4px;
+}
+
+.date-time {
+    margin-bottom: 8px;
+
+}
+
+.appointment-date {}
+
+.appointment-info {
+    display: flex;
+    justify-content: space-between;
+    /* Align items to the sides */
+}
+
+.status-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Align items to the right */
+}
+
+.appointment-status {
+    position: absolute;
+    top: 0;
+    /* Align to the top edge of the parent container */
+    right: 0;
+    /* Align to the right edge of the parent container */
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #6c5ce7;
+    /* Google's success color */
+    color: #fff;
+    font-size: 14px;
+}
+
+.book-visit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* Additional styles to make the button stand out on hover */
+.book-visit-button:hover {
+    background-color: #0056b3;
+}
+
+.dx-viewport input.uk-input {}
+
+.modern-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute elements evenly between the columns */
+}
+
+.modern-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute elements evenly between the columns */
+}
+
+.modern-box {
+    position: relative;
+    flex-basis: calc(50% - 30px);
+    /* Calculate 50% width minus margin */
+    margin: 5px;
+    /* Add other styles for .modern-box */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    height: 80px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    .modern-box {
+        height: 100px;
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+}
+
+.modern-box-user-apps {
+    position: relative;
+    flex-basis: calc(100%);
+    /* Calculate 50% width minus margin */
+    margin: 5px;
+    /* Add other styles for .modern-box */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    min-height: 80px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-details {
+    margin-top: 10px;
+    /* Add other styles for .appointment-details if needed */
+}

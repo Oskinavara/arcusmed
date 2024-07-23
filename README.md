@@ -8,6 +8,7 @@ $ yarn install
 
 # serve with hot reload at localhost:3000
 $ yarn dev
+$ php -S localhost:8000
 
 # build for production and launch server
 $ yarn build

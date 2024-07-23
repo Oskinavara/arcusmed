@@ -34,12 +34,7 @@ export default {
       },
       {
         hid: 'gtm-script2',
-        innerHtml: `window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16483909822');
-`,
+        innerHtml: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16483909822');`,
         type: 'text/javascript',
         charset: 'utf-8',
       },
@@ -74,7 +69,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/robots', '@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/robots', '@nuxtjs/sitemap', '@nuxtjs/proxy'],
 
   robots: {
     UserAgent: '*',
@@ -88,5 +83,45 @@ export default {
 
   styleResources: {
     scss: ['./styles/index.scss'],
+  },
+
+  /**
+   * SmartDental online appointments booking module.
+   * 
+   * Proxy requests for SmartDental PHP files through local PHP dev server on port 8000.
+   */
+  proxy: {
+    '/rejestracja-online/include': {
+      target: 'http://localhost:8000',
+      pathRewrite: { '^/rejestracja-online/include': '/rejestracja-online/include' },
+      changeOrigin: true,
+    },
+    '/rejestracja-online/views': {
+      target: 'http://localhost:8000',
+      pathRewrite: { '^/rejestracja-online/views': '/rejestracja-online/views' },
+      changeOrigin: true,
+    },
+    '/rejestracja-online/PHPMailer': {
+      target: 'http://localhost:8000',
+      pathRewrite: { '^/rejestracja-online/PHPMailer': '/rejestracja-online/PHPMailer' },
+      changeOrigin: true,
+    },
+    // Catch-all rule for other requests in /rejestracja-online
+    '/rejestracja-online/': {
+      target: 'http://localhost:8000',
+      pathRewrite: { '^/rejestracja-online/': '/rejestracja-online/' },
+      changeOrigin: true,
+    }
+  },
+
+  serverMiddleware: [
+    { path: '/rejestracja-online', handler: '~/serverMiddleware/proxy.js' }
+  ],
+
+  // Exclude SmartDental PHP online booking page from Nuxt route generation
+  generate: {
+    exclude: [
+      /^\/rejestracja-online/
+    ],
   },
 }
