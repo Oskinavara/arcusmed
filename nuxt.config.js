@@ -39,7 +39,7 @@ export default {
         charset: 'utf-8',
       },
       {
-        src: './mydr.js',
+        src: '/mydr.js',
         type: 'text/javascript',
         body: true
       },

@@ -18,6 +18,13 @@ export default {
     title:
       'Galeria | ARCUS-MED: Nowoczesne gabinety stomatologiczne i lekarskie',
   },
+  mounted() {
+    const PatientsPlugin = new window.PatientsPlugin()
+    PatientsPlugin.init({
+      app: 'https://mydr.pl/patients_plugin',
+      plugin: 'https://mydr.pl/static',
+    })
+  },
 }
 </script>
 
