@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       links: [
-        { url: '/', name: 'Strona główna' },
+        // { url: '/', name: 'Strona główna' },
         { url: '/o-nas', name: 'O nas' },
         { url: '/oferta', name: 'Oferta' },
         { url: '/specjalisci', name: 'Specjaliści' },
@@ -42,6 +42,7 @@ export default {
         { url: '/certyfikaty', name: 'Certyfikaty' },
         { url: '/galeria', name: 'Galeria' },
         { url: '/rejestracja-online/', name: 'Rejestracja online' },
+        { url: '/umow-wizyte', name: 'Umów wizytę' },
         { url: '/kontakt', name: 'Kontakt' },
       ],
     };
@@ -66,6 +67,7 @@ export default {
 
   &__list-item {
     margin: 0 0.5rem;
+    cursor: pointer;
   }
 
   &__link {
@@ -74,10 +76,11 @@ export default {
     color: $black;
     text-decoration: none;
     margin: 1rem 0;
+    white-space: nowrap;
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.2s;
     @include lg {
-      padding: 1rem;
+      padding: 0.75rem;
     }
 
     &.nuxt-link-exact-active,

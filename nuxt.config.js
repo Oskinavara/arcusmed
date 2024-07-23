@@ -38,6 +38,11 @@ export default {
         type: 'text/javascript',
         charset: 'utf-8',
       },
+      {
+        src: './mydr.js',
+        type: 'text/javascript',
+        body: true
+      },
     ],
   },
 
@@ -87,23 +92,29 @@ export default {
 
   /**
    * SmartDental online appointments booking module.
-   * 
+   *
    * Proxy requests for SmartDental PHP files through local PHP dev server on port 8000.
    */
   proxy: {
     '/rejestracja-online/include': {
       target: 'http://localhost:8000',
-      pathRewrite: { '^/rejestracja-online/include': '/rejestracja-online/include' },
+      pathRewrite: {
+        '^/rejestracja-online/include': '/rejestracja-online/include',
+      },
       changeOrigin: true,
     },
     '/rejestracja-online/views': {
       target: 'http://localhost:8000',
-      pathRewrite: { '^/rejestracja-online/views': '/rejestracja-online/views' },
+      pathRewrite: {
+        '^/rejestracja-online/views': '/rejestracja-online/views',
+      },
       changeOrigin: true,
     },
     '/rejestracja-online/PHPMailer': {
       target: 'http://localhost:8000',
-      pathRewrite: { '^/rejestracja-online/PHPMailer': '/rejestracja-online/PHPMailer' },
+      pathRewrite: {
+        '^/rejestracja-online/PHPMailer': '/rejestracja-online/PHPMailer',
+      },
       changeOrigin: true,
     },
     // Catch-all rule for other requests in /rejestracja-online
@@ -111,17 +122,15 @@ export default {
       target: 'http://localhost:8000',
       pathRewrite: { '^/rejestracja-online/': '/rejestracja-online/' },
       changeOrigin: true,
-    }
+    },
   },
 
   serverMiddleware: [
-    { path: '/rejestracja-online', handler: '~/serverMiddleware/proxy.js' }
+    { path: '/rejestracja-online', handler: '~/serverMiddleware/proxy.js' },
   ],
 
   // Exclude SmartDental PHP online booking page from Nuxt route generation
   generate: {
-    exclude: [
-      /^\/rejestracja-online/
-    ],
+    exclude: [/^\/rejestracja-online/],
   },
 }
