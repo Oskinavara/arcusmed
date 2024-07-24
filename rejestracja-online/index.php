@@ -305,7 +305,7 @@ $token = $_GET['token'];
       color: inherit;
     }
     .page {
-      max-width: 1300px;
+      max-width: 1440px;
       margin: 0 auto;
     }
     .page-enter-active,
@@ -331,7 +331,7 @@ $token = $_GET['token'];
       box-shadow: 0 4px 8px -7px rgba(0, 0, 0, 0.25);
     }
     .header__inner[data-v-72292c93] {
-      max-width: 1300px;
+      max-width: 1440px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -426,6 +426,7 @@ $token = $_GET['token'];
       display: block;
       padding: 1rem 0.2rem;
       color: black;
+      white-space: nowrap;
       text-decoration: none;
       margin: 1rem 0;
       border-bottom: 1px solid transparent;
@@ -433,7 +434,7 @@ $token = $_GET['token'];
     }
     @media screen and (min-width: 1150px) {
       .navigation__link[data-v-21fe78a2] {
-        padding: 1rem;
+        padding: 0.75rem;
       }
     }
     .navigation__link.nuxt-link-exact-active[data-v-21fe78a2],
@@ -637,14 +638,9 @@ $token = $_GET['token'];
             <a href="tel:506407833" data-v-6183b499>506 407 833</a> w godzinach <span data-v-6183b499>8:30 - 19:00</span>
           </div>
           <div class="header__inner" data-v-72292c93>
-            <a href="/" class="header__logo nuxt-link-active" data-v-72292c93><img alt="Arcus Med logo" src="/_nuxt/assets/arcus.svg" data-v-72292c93 /></a>
+            <a href="/" class="header__logo nuxt-link-active" data-v-72292c93><img alt="Arcus Med logo" src="/_nuxt/img/arcus.547ed1e.svg" data-v-72292c93 /></a>
             <nav class="navigation" data-v-21fe78a2 data-v-72292c93>
               <ul class="navigation__list" data-v-21fe78a2>
-                <li class="navigation__list-item" data-v-21fe78a2>
-                  <a href="/" class="nuxt-link-active navigation__link" data-v-21fe78a2>
-                    Strona główna
-                  </a>
-                </li>
                 <li class="navigation__list-item" data-v-21fe78a2>
                   <a href="/o-nas" aria-current="page" class="navigation__link" data-v-21fe78a2>
                     O nas
@@ -678,6 +674,11 @@ $token = $_GET['token'];
                 <li class="navigation__list-item" data-v-21fe78a2>
                   <a href="/rejestracja-online/" class="nuxt-link-exact-active nuxt-link-active navigation__link nuxt-link-exact-active" data-v-21fe78a2>
                     Rejestracja online
+                  </a>
+                </li>
+                <li class="navigation__list-item" data-v-21fe78a2>
+                  <a href="/umow-wizyte" class="navigation__link" data-v-21fe78a2>
+                    Umów wizytę
                   </a>
                 </li>
                 <li class="navigation__list-item" data-v-21fe78a2>
@@ -734,6 +735,11 @@ $token = $_GET['token'];
                       Rejestracja online
                     </a>
                   </li>
+				  <li class="navigation__list-item" data-v-21fe78a2>
+				    <a href="/umow-wizyte" class="navigation__link" data-v-21fe78a2>
+					  Umów wizytę
+				    </a>
+				  </li>				  
                   <li class="navigation__list-item" data-v-21fe78a2>
                     <a href="/kontakt" class="navigation__link" data-v-21fe78a2>
                       Kontakt
