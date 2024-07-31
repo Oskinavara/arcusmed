@@ -41,8 +41,9 @@ export default {
         { url: '/cennik', name: 'Cennik' },
         { url: '/certyfikaty', name: 'Certyfikaty' },
         { url: '/galeria', name: 'Galeria' },
-        { url: '/rejestracja-online/', name: 'Rejestracja online' },
-        { url: '/umow-wizyte', name: 'Umów wizytę' },
+        { url: '/wybor-uslugi', name: 'Rejestracja online' },
+        // { url: '/rejestracja-online/', name: 'Rejestracja online' },
+        // { url: '/umow-wizyte', name: 'Umów wizytę' },
         { url: '/kontakt', name: 'Kontakt' },
       ],
     };

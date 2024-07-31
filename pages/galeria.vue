@@ -3,7 +3,7 @@
     <h1>Galeria</h1>
     <h2 class="galeria__subheading">Urazy</h2>
     <GallerySection
-      imageSrc="https://oskinavara.imgix.net/galeria1.webp?auto=format&w=634"
+      imageSrc="/certyfikaty/galeria1.webp?auto=format&w=634"
       class="galeria__first"
     >
       <div class="flex">
@@ -50,15 +50,15 @@
 
     <div class="galeria__grid">
       <img
-        src="https://oskinavara.imgix.net/galeria2.webp?auto=formatw=400"
+        src="/certyfikaty/galeria2.webp?auto=formatw=400"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
       <img
-        src="https://oskinavara.imgix.net/galeria3.webp?auto=formatw=400"
+        src="/certyfikaty/galeria3.webp?auto=formatw=400"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
       <img
-        src="https://oskinavara.imgix.net/galeria4.webp?auto=formatw=400"
+        src="/certyfikaty/galeria4.webp?auto=formatw=400"
         alt="Zdjęcia przed i po leczeniu kanałowym"
       />
     </div>
